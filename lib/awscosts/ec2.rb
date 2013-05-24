@@ -1,0 +1,29 @@
+require 'awscosts/ec2_on_demand'
+require 'awscosts/ec2_reserved_instances'
+require 'awscosts/ec2_elb'
+
+class AWSCosts::EC2
+
+  attr_reader :region
+
+  TYPES = { windows: 'mswin', linux: 'linux', windows_with_sql: 'mswinSQL',
+            windows_with_sql_web: 'mswinSQLWeb', rhel: 'rhel', sles: 'sles' }
+
+  def initialize region
+    @region = region
+  end
+
+  def on_demand(type)
+    AWSCosts::EC2OnDemand.fetch(type, self.region.price_mapping)
+  end
+
+  def reserved(type, utilisation= :light)
+    AWSCosts::EC2ReservedInstances.fetch(type, utilisation, self.region.price_mapping)
+  end
+
+  def elb
+    AWSCosts::ELB.fetch(self.region.price_mapping)
+  end
+end
+
+
