@@ -51,6 +51,13 @@ To find the price per GB processed of an ELB in the Sydney region.
 
     AWSCosts.region('ap-southeast-2').ec2.elb.price_per_gb
 
+### EMR
+
+To find the on demand EC2 price and Elastic MapReduce price for the Oregon region.
+
+    AWSCosts.region('us-west-2').emr.ec2_price('cc2.8xlarge')
+    AWSCosts.region('us-west-2').emr.emr_price('cc2.8xlarge')
+
 ## Supported Services
 
 The following AWS services are currently support (more to come):
@@ -60,6 +67,7 @@ The following AWS services are currently support (more to come):
 * Reserved medium utilisation
 * Reserved heavy utilisation
 * Elastic Load Balancer (ELB)
+* Elastic MapReduce (EMR)
 
 EC2 platforms:
 

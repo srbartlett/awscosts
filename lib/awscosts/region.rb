@@ -23,6 +23,9 @@ class AWSCosts::Region
     AWSCosts::EC2.new(self)
   end
 
+  def emr
+    AWSCosts::EMR.fetch(self.price_mapping)
+  end
 
   private
   def initialize name
