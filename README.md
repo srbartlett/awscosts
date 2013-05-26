@@ -58,6 +58,21 @@ To find the on demand EC2 price and Elastic MapReduce price for the Oregon regio
     AWSCosts.region('us-west-2').emr.ec2_price('cc2.8xlarge')
     AWSCosts.region('us-west-2').emr.emr_price('cc2.8xlarge')
 
+### S3
+
+To find the First 1 TB / month price in the Singapore region which includes the Standard
+Storage, Reduced Redundancy Storage, and the Glacier Storage
+
+    AWSCosts.region('ap-southeast-1').s3.storage.price('firstTBstorage')
+
+Pricing is also available for data transfer
+
+    region.s3.data_transfer.price
+
+And request pricing
+
+    region.s3.request.price
+
 ## Supported Services
 
 The following AWS services are currently support (more to come):
@@ -68,6 +83,7 @@ The following AWS services are currently support (more to come):
 * Reserved heavy utilisation
 * Elastic Load Balancer (ELB)
 * Elastic MapReduce (EMR)
+* S3
 
 EC2 platforms:
 

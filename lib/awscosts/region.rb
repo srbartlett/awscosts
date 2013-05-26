@@ -27,6 +27,10 @@ class AWSCosts::Region
     AWSCosts::EMR.fetch(self.price_mapping)
   end
 
+  def s3
+    AWSCosts::S3.new(self)
+  end
+
   private
   def initialize name
     @name = name
