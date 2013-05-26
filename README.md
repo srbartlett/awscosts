@@ -73,6 +73,15 @@ And request pricing
 
     region.s3.request.price
 
+### EBS
+
+To find the price of Amazon EBS standard volumes in the Ireland region.
+
+    AWSCosts.region('eu-west-1').ec2.elb.price(:standard)
+
+`.price` also supports `:provisioned_iops` and `:snapshots_to_s3`
+
+
 ## Supported Services
 
 The following AWS services are currently support (more to come):
@@ -82,6 +91,7 @@ The following AWS services are currently support (more to come):
 * Reserved medium utilisation
 * Reserved heavy utilisation
 * Elastic Load Balancer (ELB)
+* Elastic Block Storage (EBS)
 * Elastic MapReduce (EMR)
 * S3
 
