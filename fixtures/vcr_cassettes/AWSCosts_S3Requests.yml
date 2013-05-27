@@ -1,0 +1,170 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/s3/pricing/pricing-requests.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 27 May 2013 05:48:33 GMT
+      server:
+      - Server
+      x-amz-id-1:
+      - 0TM5HZS5FNWZW7TN6CMB
+      x-amz-id-2:
+      - GxUSJTG2wexB21h/sG3UeSzhHcdDqRlZtHI87p/g3WHzAJax+QiBsw==
+      cache-control:
+      - max-age=0
+      expires:
+      - Mon, 27 May 2013 05:48:33 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      set-cookie:
+      - x-wl-uid=1S9AM3Ln55II36B0ZS0QxjAnrQMuSvFs9Dsqbr+p/3eHKuNel03rPalysSkdeiXy0nWBcL5lEfOA=;
+        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      - aws-session-id=183-3782051-3835448; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      vary:
+      - User-Agent
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n  {\n    \"vers\": 0.01,\n    \"config\": {\n        \"currencies\":
+        [\"USD\"],\n        \"valueColumns\": [\"pricing\"],\n        \"regions\":
+        [\n            {\n                \"region\": \"us-east\",\n                \"footnotes\":
+        {\n                    \"&dagger;\": \"chargesForGlacierDeletes03\",\n                    \"&dagger;&dagger;\":
+        \"glacierNotes01\"\n                },\n                \"tiers\": [\n                    {\n
+        \                       \"name\": \"putcopypost\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.005\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"glacierRequests\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.05\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"deleteRequests\",\n                        \"prices\":
+        {\n\t\t\t\t\t        \"USD\": \"Free &dagger;\"\n\t\t\t\t\t    },\n                        \"rate\":
+        \"per1kReq\"\n                    },\n                    {\n                        \"name\":
+        \"getEtc\",\n                        \"prices\": {\n                            \"USD\":
+        \"0.004\"\n                        },\n                        \"rate\": \"per10kReq\"\n
+        \                   },\n\t\t\t\t\t{\n                        \"name\": \"glacierDataRestore\",\n
+        \                       \"prices\": {\n\t\t\t\t\t        \"USD\": \"Free &dagger;&dagger;\"\n\t\t\t\t\t
+        \   }\n                    }\n                ]\n            },\n            {\n
+        \               \"region\": \"us-west-2\",\n                \"footnotes\":
+        {\n                    \"&dagger;\": \"chargesForGlacierDeletes03\",\n                    \"&dagger;&dagger;\":
+        \"glacierNotes01\"\n                },\n                \"tiers\": [\n                    {\n
+        \                       \"name\": \"putcopypost\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.005\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"glacierRequests\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.05\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"deleteRequests\",\n                        \"prices\":
+        {\n\t\t\t\t\t        \"USD\": \"Free &dagger;\"\n\t\t\t\t\t    },\n                        \"rate\":
+        \"per1kReq\"\n                    },\n                    {\n                        \"name\":
+        \"getEtc\",\n                        \"prices\": {\n                            \"USD\":
+        \"0.004\"\n                        },\n                        \"rate\": \"per10kReq\"\n
+        \                   },\n\t\t\t\t\t{\n                        \"name\": \"glacierDataRestore\",\n
+        \                       \"prices\": {\n\t\t\t\t\t        \"USD\": \"Free &dagger;&dagger;\"\n\t\t\t\t\t
+        \   }\n                    }\n                ]\n            },\n            {\n
+        \               \"region\": \"us-west\",\n                \"footnotes\": {\n
+        \                   \"&dagger;\": \"chargesForGlacierDeletes033\",\n                    \"&dagger;&dagger;\":
+        \"glacierNotes011\"\n                },\n                \"tiers\": [\n                    {\n
+        \                       \"name\": \"putcopypost\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.0055\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"glacierRequests\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.055\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"deleteRequests\",\n                        \"prices\":
+        {\n\t\t\t\t\t        \"USD\": \"Free &dagger;\"\n\t\t\t\t\t    },\n                        \"rate\":
+        \"per1kReq\"\n                    },\n                    {\n                        \"name\":
+        \"getEtc\",\n                        \"prices\": {\n                            \"USD\":
+        \"0.0044\"\n                        },\n                        \"rate\":
+        \"per10kReq\"\n                    },\n\t\t\t\t\t{\n                        \"name\":
+        \"glacierDataRestore\",\n                        \"prices\": {\n\t\t\t\t\t
+        \       \"USD\": \"Free &dagger;&dagger;\"\n\t\t\t\t\t    }\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"eu-ireland\",\n                \"footnotes\": {\n                    \"&dagger;\":
+        \"chargesForGlacierDeletes033\",\n                    \"&dagger;&dagger;\":
+        \"glacierNotes011\"\n                },\n                \"tiers\": [\n                    {\n
+        \                       \"name\": \"putcopypost\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.005\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"glacierRequests\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.055\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"deleteRequests\",\n                        \"prices\":
+        {\n\t\t\t\t\t        \"USD\": \"Free &dagger;\"\n\t\t\t\t\t    },\n                        \"rate\":
+        \"per1kReq\"\n                    },\n                    {\n                        \"name\":
+        \"getEtc\",\n                        \"prices\": {\n                            \"USD\":
+        \"0.004\"\n                        },\n                        \"rate\": \"per10kReq\"\n
+        \                   },\n\t\t\t\t\t{\n                        \"name\": \"glacierDataRestore\",\n
+        \                       \"prices\": {\n\t\t\t\t\t        \"USD\": \"Free &dagger;&dagger;\"\n\t\t\t\t\t
+        \   }\n                    }\n                ]\n            },\n            {\n
+        \               \"region\": \"apac-sin\",\n                \"footnotes\":
+        {\n                    \"&dagger;\": \"noChargeForDeletes\"\n                },\n
+        \               \"tiers\": [\n                    {\n                        \"name\":
+        \"putcopypost\",\n                        \"prices\": {\n                            \"USD\":
+        \"0.005\"\n                        },\n                        \"rate\": \"per1kReq\"\n
+        \                   },\n\t\t\t\t\t{\n                        \"name\": \"deleteRequests\",\n
+        \                       \"prices\": {\n\t\t\t\t\t        \"USD\": \"Free &dagger;\"\n\t\t\t\t\t
+        \   },\n                        \"rate\": \"per1kReq\"\n                    },\n
+        \                   {\n                        \"name\": \"getEtc\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.004\"\n                        },\n
+        \                       \"rate\": \"per10kReq\"\n                    }\n                ]\n
+        \           },\n            {\n                \"region\": \"apac-tokyo\",\n
+        \               \"footnotes\": {\n                    \"&dagger;\": \"chargesForGlacierDeletes036\",\n
+        \                   \"&dagger;&dagger;\": \"glacierNotes012\"\n                },\n
+        \               \"tiers\": [\n                    {\n                        \"name\":
+        \"putcopypost\",\n                        \"prices\": {\n                            \"USD\":
+        \"0.005\"\n                        },\n                        \"rate\": \"per1kReq\"\n
+        \                   },\n\t\t\t\t\t{\n                        \"name\": \"glacierRequests\",\n
+        \                       \"prices\": {\n                            \"USD\":
+        \"0.060\"\n                        },\n                        \"rate\": \"per1kReq\"\n
+        \                   },\n\t\t\t\t\t{\n                        \"name\": \"deleteRequests\",\n
+        \                       \"prices\": {\n\t\t\t\t\t        \"USD\": \"Free &dagger;\"\n\t\t\t\t\t
+        \   },\n                        \"rate\": \"per1kReq\"\n                    },\n
+        \                   {\n                        \"name\": \"getEtc\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.004\"\n                        },\n
+        \                       \"rate\": \"per10kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"glacierDataRestore\",\n                        \"prices\":
+        {\n\t\t\t\t\t        \"USD\": \"Free &dagger;&dagger;\"\n\t\t\t\t\t    }\n
+        \                   }\n                ]\n            },\n\t\t\t{\n                \"region\":
+        \"apac-syd\",\n                \"footnotes\": {\n                    \"&dagger;\":
+        \"noChargeForDeletes\"\n                },\n                \"tiers\": [\n
+        \                   {\n                        \"name\": \"putcopypost\",\n
+        \                       \"prices\": {\n                            \"USD\":
+        \"0.0055\"\n                        },\n                        \"rate\":
+        \"per1kReq\"\n                    },\n\t\t\t\t\t{\n                        \"name\":
+        \"deleteRequests\",\n                        \"prices\": {\n\t\t\t\t\t        \"USD\":
+        \"Free &dagger;\"\n\t\t\t\t\t    }\n                    },\n                    {\n
+        \                       \"name\": \"getEtc\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.0044\"\n                        },\n
+        \                       \"rate\": \"per10kReq\"\n                    }\n                ]\n
+        \           },\n            {\n                \"region\": \"sa-east-1\",\n
+        \               \"footnotes\": {\n                    \"&dagger;\": \"noChargeForDeletes\"\n
+        \               },\n                \"tiers\": [\n                    {\n
+        \                       \"name\": \"putcopypost\",\n                        \"prices\":
+        {\n                            \"USD\": \"0.007\"\n                        },\n
+        \                       \"rate\": \"per1kReq\"\n                    },\n\t\t\t\t\t{\n
+        \                       \"name\": \"deleteRequests\",\n                        \"prices\":
+        {\n\t\t\t\t\t        \"USD\": \"Free &dagger;\"\n\t\t\t\t\t    },\n                        \"rate\":
+        \"per1kReq\"\n                    },\n                    {\n                        \"name\":
+        \"getEtc\",\n                        \"prices\": {\n                            \"USD\":
+        \"0.0056\"\n                        },\n                        \"rate\":
+        \"per10kReq\"\n                    }\n                ]\n            }\n        ]\n
+        \   }\n}\n\n\n\n"
+    http_version: '1.1'
+  recorded_at: Mon, 27 May 2013 05:48:38 GMT
+recorded_with: VCR 2.0.1

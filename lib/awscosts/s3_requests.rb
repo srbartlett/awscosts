@@ -3,8 +3,6 @@ require 'json'
 
 class AWSCosts::S3Requests
 
-  TIERS = %w{putcopypost, glacierRequests, deleteRequests, getEtc, glacierDataRestore}
-
   def initialize data
     @data= data
   end

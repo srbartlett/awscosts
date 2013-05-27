@@ -1,0 +1,767 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/elasticmapreduce/pricing/pricing-emr.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 27 May 2013 05:36:36 GMT
+      server:
+      - Server
+      x-amz-id-1:
+      - 0NWYACST54TB0XHBCF7Y
+      x-amz-id-2:
+      - ATTjkALF+QjJ+9KPuvuwvbPG+qJj3btsynWgdbuhZFM=
+      cache-control:
+      - max-age=0
+      expires:
+      - Mon, 27 May 2013 05:36:36 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      set-cookie:
+      - x-wl-uid=1rSLKNF/VNv3Yny+bH4jfjcX2roVZoOutamV44odnpo+/sWqKhFAPPOayEHcHCB2vVNvINAUiSDw=;
+        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      - aws-session-id=181-5876243-5082731; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      vary:
+      - User-Agent
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n  {\n    \"vers\": 0.01,\n    \"config\": {\n        \"rate\":
+        \"perhr\",\n        \"currencies\": [\"USD\"],\n        \"regions\": [\n            {\n
+        \               \"region\": \"us-east\",\n                \"footnotes\": {\n
+        \               },\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.24\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.48\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.41\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.82\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.64\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.145\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.58\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.30\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.27\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.40\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.50\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterGPUI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.10\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n\t\t\t\t\t{\n
+        \                       \"type\": \"hiIOODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.10\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.47\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n\t\t\t\t\t{\n
+        \                       \"type\": \"hiStoreODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"4.60\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.69\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"us-west-2\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.24\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.48\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.41\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.82\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.64\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.145\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.58\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.40\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.50\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"us-west\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.065\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.13\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.26\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.52\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.46\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.92\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.84\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.165\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.66\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n        \n            {\n                \"region\":
+        \"eu-ireland\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.065\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.13\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.26\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.52\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.46\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.92\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.84\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.165\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.66\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.70\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.50\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n\t\t\t\t\t{\n
+        \                       \"type\": \"hiIOODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.41\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.51\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-sin\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.08\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.16\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.32\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.64\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.495\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.99\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.98\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.183\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.73\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-tokyo\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.088\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.175\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.35\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.70\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.505\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.01\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.02\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.185\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.74\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \                  ]\n            },\n\t\t\t{\n                \"region\":
+        \"apac-syd\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.08\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.16\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.32\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.64\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.495\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.99\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.98\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.183\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.73\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"sa-east-1\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.08\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.015\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n\t\t\t\t\t\t\t{\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.16\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.32\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.06\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.64\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.54\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.09\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.08\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.21\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.16\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.42\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.20\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.03\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"ec2\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.80\"\n                                        }\n
+        \                                   },\n                                    {\n
+        \                                       \"name\": \"emr\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.12\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            }\n        ]\n    }\n}\n\n\n\n"
+    http_version: '1.1'
+  recorded_at: Mon, 27 May 2013 05:36:41 GMT
+recorded_with: VCR 2.0.1

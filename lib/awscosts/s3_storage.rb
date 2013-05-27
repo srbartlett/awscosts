@@ -3,8 +3,6 @@ require 'json'
 
 class AWSCosts::S3Storage
 
-  TIERS = %w{firstTBstorage, next49TBstorage, next49TBstorage, next501TBstorage}
-
   def initialize data
     @data= data
   end
@@ -33,5 +31,4 @@ class AWSCosts::S3Storage
   end
 
 end
-
 
