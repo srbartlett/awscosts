@@ -1,9 +1,11 @@
-# Awscosts
+# AWSCosts
 
 AWSCosts allows programmatic access to AWS pricing.
 
 Useful for calculating the running costs of your fleet of EC2 instances and
 associated services such as ELBs, RDS, CloudWatch, etc.
+
+[![Build Status](https://travis-ci.org/srbartlett/awscosts.png)](https://travis-ci.org/srbartlett/awscosts)
 
 ## Installation
 
