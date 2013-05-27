@@ -1,0 +1,1810 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/ec2/pricing/json/linux-ri-light.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 27 May 2013 05:18:32 GMT
+      server:
+      - Server
+      x-amz-id-1:
+      - 0D48GFBERVNMFJNN347E
+      x-amz-id-2:
+      - Bh4pQTu/MahsokIRjv01zYI5Q4cuTnHw26hGgcRtibs=
+      cache-control:
+      - max-age=0
+      expires:
+      - Mon, 27 May 2013 05:18:32 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      set-cookie:
+      - x-wl-uid=1SjYWOpF4NKZ4JzUFPCRmtU4S8ccH2fBHa/RkbBr3npDUDqsYTAlbZmdCOjyUyXv15WCqLuUGFU0=;
+        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      - aws-session-id=184-5503550-5970232; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      vary:
+      - User-Agent
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n  {\n  \"vers\": 0.01,\n  \"config\": {\n    \"regions\": [\n
+        \     {\n        \"instanceTypes\": [\n          {\n            \"type\":
+        \"stdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"61\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.034\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"96\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.027\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"122\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.068\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"192\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.054\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"243\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.136\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"384\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.108\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"486\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.271\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"768\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.215\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"517\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.299\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"807\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.236\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1034\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.598\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1614\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.472\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"23\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.012\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"35\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.012\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"272\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.169\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"398\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.136\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"544\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.338\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"796\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.272\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1088\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.676\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1592\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.544\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"161\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.09\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"243\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.079\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"644\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.36\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"972\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.316\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1762\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.904\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"2710\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.904\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"2474\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"1.54\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3846\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.225\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"2576\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"1.477\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3884\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.15\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"3968\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"2.24\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"5997\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.81\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"us-east\",\n        \"footnotes\": {\n          \"\": \"\"\n        }\n
+        \     },\n      {\n        \"instanceTypes\": [\n          {\n            \"type\":
+        \"stdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"61\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.042\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"96\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.034\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"122\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.085\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"192\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.067\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"243\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.17\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"384\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.135\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"486\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.339\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"768\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.269\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"517\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.376\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"807\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.297\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1034\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.752\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1614\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.594\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"23\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.015\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"35\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.015\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"272\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.206\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"398\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.166\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"544\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.412\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"796\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.332\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1088\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.824\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1592\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.664\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"161\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.113\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"243\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.099\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"644\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.452\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"972\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.396\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"us-west-1\",\n        \"footnotes\": {\n          \"*\": \"clusterOnlyInUSEast\"\n
+        \       }\n      },\n      {\n        \"instanceTypes\": [\n          {\n
+        \           \"type\": \"stdResI\",\n            \"sizes\": [\n              {\n
+        \               \"valueColumns\": [\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"61\"\n                    },\n                    \"name\":
+        \"yrTerm1\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.034\"\n                    },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"96\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.027\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"122\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.068\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"192\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.054\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"243\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.136\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"384\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.108\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"486\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.271\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"768\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.215\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"517\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.299\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"807\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.236\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1034\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.598\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1614\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.472\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"23\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.012\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"35\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.012\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"272\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.169\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"398\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.136\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"544\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.338\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"796\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.272\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1088\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.676\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1592\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.544\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"161\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.09\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"243\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.079\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"644\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.36\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"972\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.316\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1762\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.904\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"2710\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.904\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"2474\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"1.54\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3846\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.225\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"2576\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"1.477\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3884\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.15\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"3968\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"2.24\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"5997\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.81\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"us-west-2\",\n        \"footnotes\": {\n          \"*\": \"clusterOnlyInUSEast\"\n
+        \       }\n      },\n      {\n        \"instanceTypes\": [\n          {\n
+        \           \"type\": \"stdResI\",\n            \"sizes\": [\n              {\n
+        \               \"valueColumns\": [\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"61\"\n                    },\n                    \"name\":
+        \"yrTerm1\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.042\"\n                    },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"96\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.034\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"122\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.085\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"192\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.067\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"243\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.17\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"384\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.134\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"486\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.339\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"768\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.268\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"517\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.374\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"807\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.296\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1034\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.748\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1614\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.592\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"23\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.015\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"35\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.015\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"272\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.206\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"398\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.166\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"544\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.412\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"796\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.332\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1088\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.824\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1592\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.664\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"155\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.113\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"243\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.099\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"620\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.452\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"972\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.396\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1762\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.18\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"2710\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.18\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"2474\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"1.988\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3846\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.536\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"2576\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"2.605\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3884\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"2.035\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"3968\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"3.09\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"5997\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"2.396\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"eu-west-1\",\n        \"footnotes\": {\n          \"*\": \"clusterOnlyInUSEast\"\n
+        \       }\n      },\n      {\n        \"instanceTypes\": [\n          {\n
+        \           \"type\": \"stdResI\",\n            \"sizes\": [\n              {\n
+        \               \"valueColumns\": [\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"67\"\n                    },\n                    \"name\":
+        \"yrTerm1\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.047\"\n                    },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"97\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.037\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"133\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.093\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"194\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.075\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"266\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.186\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"388\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.149\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"532\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.372\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"776\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.298\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"585\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.41\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"899\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.326\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1170\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.82\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1798\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.652\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"23\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.015\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"35\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.015\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"282\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.231\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"423\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.185\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"564\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.462\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"846\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.37\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1128\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.924\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1692\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.74\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"174\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.122\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"261\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.107\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"696\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.488\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1044\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.428\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"ap-southeast-1\",\n        \"footnotes\": {\n          \"*\": \"clusterOnlyInUSEast\"\n
+        \       }\n      },\n      {\n        \"instanceTypes\": [\n          {\n
+        \           \"type\": \"stdResI\",\n            \"sizes\": [\n              {\n
+        \               \"valueColumns\": [\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"68\"\n                    },\n                    \"name\":
+        \"yrTerm1\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.052\"\n                    },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"106\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.041\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"135\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.103\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"212\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.082\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"270\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.206\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"424\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.164\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"540\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.412\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"848\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.327\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"593\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.453\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"934\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.359\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1186\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.906\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1868\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.718\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"24\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.017\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"37\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.017\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"302\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.253\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"460\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.201\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"604\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.506\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"920\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.402\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1208\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.012\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1840\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.804\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"184\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.135\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"269\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.118\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"736\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.54\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1076\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.472\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"ap-northeast-1\",\n        \"footnotes\": {\n          \"*\": \"clusterOnlyInUSEast\"\n
+        \       }\n      },\n      {\n        \"instanceTypes\": [\n          {\n
+        \           \"type\": \"stdResI\",\n            \"sizes\": [\n              {\n
+        \               \"valueColumns\": [\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"67\"\n                    },\n                    \"name\":
+        \"yrTerm1\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.047\"\n                    },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"97\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.037\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"133\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.093\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"194\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.075\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"266\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.186\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"388\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.149\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"531\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.372\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"776\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.298\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"585\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.41\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"899\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.326\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1170\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.82\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1798\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.652\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"23\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.015\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"35\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.015\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"282\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.231\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"423\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.185\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"564\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.462\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"846\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.37\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1128\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.924\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1692\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.74\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"174\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.122\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"266\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.106\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"696\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.488\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1064\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.424\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"ap-southeast-2\",\n        \"footnotes\": {\n          \"*\": \"clusterOnlyInUSEast\"\n
+        \       }\n      },\n      {\n        \"instanceTypes\": [\n          {\n
+        \           \"type\": \"stdResI\",\n            \"sizes\": [\n              {\n
+        \               \"valueColumns\": [\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"124\"\n                    },\n                    \"name\":
+        \"yrTerm1\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.064\"\n                    },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"193\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.053\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"sm\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"248\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.129\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"385\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.105\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"495\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.258\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"770\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.21\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"lg\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"990\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.515\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1540\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.42\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"secgenstdResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"1118\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.562\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1656\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.462\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"2236\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.124\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3312\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.924\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"uResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"31\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.016\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"47\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.016\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"u\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"596\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.30\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"877\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.245\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1192\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.60\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1754\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.49\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"2384\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.20\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"3508\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.98\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiCPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"267\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"0.134\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"419\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.117\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"med\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"1068\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.536\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"1676\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.468\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterCompResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             },\n              {\n                \"valueColumns\": [\n                  {\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1\"\n                  },\n
+        \                 {\n                    \"rate\": \"perhr\",\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm1Hourly\"\n                  },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterHiMemResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"clusterGPUResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiIoResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxl\"\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiStoreResI\",\n            \"sizes\": [\n              {\n                \"valueColumns\":
+        [\n                  {\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm1\"\n
+        \                 },\n                  {\n                    \"rate\": \"perhr\",\n
+        \                   \"prices\": {\n                      \"USD\": \"N/A\"\n
+        \                   },\n                    \"name\": \"yrTerm1Hourly\"\n
+        \                 },\n                  {\n                    \"prices\":
+        {\n                      \"USD\": \"N/A\"\n                    },\n                    \"name\":
+        \"yrTerm3\"\n                  },\n                  {\n                    \"rate\":
+        \"perhr\",\n                    \"prices\": {\n                      \"USD\":
+        \"N/A\"\n                    },\n                    \"name\": \"yrTerm3Hourly\"\n
+        \                 }\n                ],\n                \"size\": \"xxxxxxxxl\"\n
+        \             }\n            ]\n          }\n        ],\n        \"region\":
+        \"sa-east-1\",\n        \"footnotes\": {\n          \"*\": \"clusterOnlyInUSEast\"\n
+        \       }\n      }\n    ],\n    \"valueColumns\": [\n      \"upfront\",\n
+        \     \"hourly\",\n      \"upfront\",\n      \"hourly\"\n    ],\n    \"currencies\":
+        [\n      \"USD\"\n    ]\n  }\n}\n\n\n\n"
+    http_version: '1.1'
+  recorded_at: Mon, 27 May 2013 05:18:37 GMT
+recorded_with: VCR 2.0.1

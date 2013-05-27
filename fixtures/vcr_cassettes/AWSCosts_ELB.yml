@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/ec2/pricing/pricing-elb.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 27 May 2013 03:58:57 GMT
+      server:
+      - Server
+      x-amz-id-1:
+      - 0HFYNPHEHS6GKA53B25R
+      x-amz-id-2:
+      - FVeo8oQ08jNawfT2AFVVWoaY+3N3VtwUwMdNFLWh2Y5w2hlZw/tHgA==
+      cache-control:
+      - max-age=0
+      expires:
+      - Mon, 27 May 2013 03:58:57 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      set-cookie:
+      - x-wl-uid=1PmFB0+jZ3yPSPpbD4q2FlkayLkqj/ZCSK5q+ItiF63kxDiuBVGsN36adZd8/VZfg4/xR7qmbgBg=;
+        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      - aws-session-id=190-4277354-0140842; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      vary:
+      - User-Agent
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n  {\n    \"vers\": 0.01,\n    \"config\": {\n        \"currencies\":
+        [\"USD\"],\n        \"rate\": \"perInstanceHour@1min\",\n        \"regions\":
+        [\n            {\n                \"region\": \"us-east\",\n                \"types\":
+        [\n                    {\n                        \"values\": [\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.025\"\n                                },\n                                \"rate\":
+        \"perELBHour\"\n                            },\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.008\"\n                                },\n                                \"rate\":
+        \"perGBProcessed\"\n                            }\n                        ]\n
+        \                   }\n                ]\n            },\n            {\n
+        \               \"region\": \"us-west-2\",\n                \"types\": [\n
+        \                   {\n                        \"values\": [\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.025\"\n                                },\n                                \"rate\":
+        \"perELBHour\"\n                            },\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.008\"\n                                },\n                                \"rate\":
+        \"perGBProcessed\"\n                            }\n                        ]\n
+        \                   }\n                ]\n            },\n            {\n
+        \               \"region\": \"us-west\",\n                \"types\": [\n                    {\n
+        \                       \"values\": [\n                            {\n                                \"prices\":
+        {\n                                    \"USD\": \"0.028\"\n                                },\n
+        \                               \"rate\": \"perELBHour\"\n                            },\n
+        \                           {\n                                \"prices\":
+        {\n                                    \"USD\": \"0.008\"\n                                },\n
+        \                               \"rate\": \"perGBProcessed\"\n                            }\n
+        \                       ]\n                    }\n                ]\n            },\n
+        \           {\n                \"region\": \"eu-ireland\",\n                \"types\":
+        [\n                    {\n                        \"values\": [\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.028\"\n                                },\n                                \"rate\":
+        \"perELBHour\"\n                            },\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.008\"\n                                },\n                                \"rate\":
+        \"perGBProcessed\"\n                            }\n                        ]\n
+        \                   }\n                ]\n            },\n            {\n
+        \               \"region\": \"apac-sin\",\n                \"types\": [\n
+        \                   {\n                        \"values\": [\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.028\"\n                                },\n                                \"rate\":
+        \"perELBHour\"\n                            },\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.008\"\n                                },\n                                \"rate\":
+        \"perGBProcessed\"\n                            }\n                        ]\n
+        \                   }\n                ]\n            },\n            {\n
+        \               \"region\": \"apac-tokyo\",\n                \"types\": [\n
+        \                   {\n                        \"values\": [\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.028\"\n                                },\n                                \"rate\":
+        \"perELBHour\"\n                            },\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.008\"\n                                },\n                                \"rate\":
+        \"perGBProcessed\"\n                            }\n                        ]\n
+        \                   }\n                ]\n            },\n            {\n
+        \               \"region\": \"apac-syd\",\n                \"types\": [\n
+        \                   {\n                        \"values\": [\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.028\"\n                                },\n                                \"rate\":
+        \"perELBHour\"\n                            },\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.008\"\n                                },\n                                \"rate\":
+        \"perGBProcessed\"\n                            }\n                        ]\n
+        \                   }\n                ]\n            },\n            {\n
+        \               \"region\": \"sa-east-1\",\n                \"types\": [\n
+        \                   {\n                        \"values\": [\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.034\"\n                                },\n                                \"rate\":
+        \"perELBHour\"\n                            },\n                            {\n
+        \                               \"prices\": {\n                                    \"USD\":
+        \"0.011\"\n                                },\n                                \"rate\":
+        \"perGBProcessed\"\n                            }\n                        ]\n
+        \                   }\n                ]\n            }\n        ]\n    }\n}\n\n\n\n\n"
+    http_version: '1.1'
+  recorded_at: Mon, 27 May 2013 03:58:58 GMT
+recorded_with: VCR 2.0.1

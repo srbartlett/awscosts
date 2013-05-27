@@ -14,9 +14,8 @@ class AWSCosts::S3Requests
   end
 
   def self.fetch region
-    @cache ||= begin
+    transformed= AWSCosts::Cache.get("/s3/pricing/pricing-requests.json") do |data|
       result = {}
-      data= JSON.parse(HTTParty.get("http://aws.amazon.com/s3/pricing/pricing-requests.json").body)
       data['config']['regions'].each do |region|
         tiers = {}
         region['tiers'].each do |tier|
@@ -26,7 +25,7 @@ class AWSCosts::S3Requests
       end
       result
     end
-    self.new(@cache[region])
+    self.new(transformed[region])
   end
 
 end

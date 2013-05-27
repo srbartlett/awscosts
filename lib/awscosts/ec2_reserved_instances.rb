@@ -38,19 +38,17 @@ class AWSCosts::EC2ReservedInstances
     if size
       @data["#{TERMS[term]}Hourly"][size]
     else
-      @data["#{TERMS[term]}Hourly"][size]
+      @data["#{TERMS[term]}Hourly"]
     end
   end
 
 
   def self.fetch type, utilisation, region
-    raw_data= cache[type] ||= begin
+    transformed= AWSCosts::Cache.get("/ec2/pricing/json/#{type}-ri-#{utilisation}.json") do |data|
       result = {}
-      data= JSON.parse(HTTParty.get("http://aws.amazon.com/ec2/pricing/json/#{AWSCosts::EC2::TYPES[type]}-ri-#{utilisation}.json").body)
       data['config']['regions'].each do |region|
         platforms = {}
         region['instanceTypes'].each do |instance_type|
-          type = instance_type['type']
           instance_type['sizes'].each do |instance_size|
             size = instance_size['size']
             platform_cost = Hash.new({})
@@ -61,7 +59,7 @@ class AWSCosts::EC2ReservedInstances
 
             platform_cost.each_pair do |p,v|
               platforms[p] = {} unless platforms.key?(p)
-              platforms[p][TYPE_TRANSLATION["#{type}.#{size}"]] = v
+              platforms[p][TYPE_TRANSLATION["#{instance_type['type']}.#{size}"]] = v
             end
           end
         end
@@ -69,13 +67,8 @@ class AWSCosts::EC2ReservedInstances
       end
       result
     end
-    self.new(raw_data[region])
+    self.new(transformed[region])
   end
 
-
-  private
-  def self.cache
-    @@cache ||= {}
-  end
 end
 

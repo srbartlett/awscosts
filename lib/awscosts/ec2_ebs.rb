@@ -15,9 +15,8 @@ class AWSCosts::EBS
   end
 
   def self.fetch region
-    @fetch ||= begin
+    transformed= AWSCosts::Cache.get('/ec2/pricing/pricing-ebs.json') do |data|
       result = {}
-      data= JSON.parse(HTTParty.get('http://aws.amazon.com/ec2/pricing/pricing-ebs.json').body)
       data['config']['regions'].each do |region|
         container = {}
         region['types'].each do |type|
@@ -30,7 +29,7 @@ class AWSCosts::EBS
       end
       result
     end
-    self.new(@fetch[region])
+    self.new(transformed[region])
   end
 
 end

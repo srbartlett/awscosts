@@ -15,11 +15,11 @@ class AWSCosts::EC2
   end
 
   def on_demand(type)
-    AWSCosts::EC2OnDemand.fetch(type, self.region.price_mapping)
+    AWSCosts::EC2OnDemand.fetch(TYPES[type], self.region.price_mapping)
   end
 
   def reserved(type, utilisation= :light)
-    AWSCosts::EC2ReservedInstances.fetch(type, utilisation, self.region.price_mapping)
+    AWSCosts::EC2ReservedInstances.fetch(TYPES[type], utilisation, self.region.name)
   end
 
   def elb

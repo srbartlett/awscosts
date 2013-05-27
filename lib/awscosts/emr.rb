@@ -31,9 +31,8 @@ class AWSCosts::EMR
   end
 
   def self.fetch region
-    @cache ||= begin
+    transformed= AWSCosts::Cache.get("/elasticmapreduce/pricing/pricing-emr.json") do |data|
       result = {}
-      data= JSON.parse(HTTParty.get("http://aws.amazon.com/elasticmapreduce/pricing/pricing-emr.json").body)
       data['config']['regions'].each do |region|
         platforms = {}
         region['instanceTypes'].each do |instance_type|
@@ -54,12 +53,8 @@ class AWSCosts::EMR
       end
       result
     end
-    self.new(@cache[region])
+    self.new(transformed[region])
   end
 
-  private
-  def self.cache
-    @@cache ||= {}
-  end
 end
 

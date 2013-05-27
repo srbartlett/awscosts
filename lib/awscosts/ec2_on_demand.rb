@@ -1,5 +1,4 @@
-require 'httparty'
-require 'json'
+require 'awscosts/ec2'
 
 class AWSCosts::EC2OnDemand
 
@@ -22,23 +21,20 @@ class AWSCosts::EC2OnDemand
                      'hiStoreODI.xxxxxxxxl' => 'hs1.8xlarge',
                      'hiIoODI.xxxxl' => 'hi1.4xlarge' }
 
-  def initialize type, data
-    @type = type
+  def initialize data
     @data= data
   end
 
   def price size=nil
-    size ? @data[TYPE_MAPPING[@type]][size] : @data[TYPE_MAPPING[@type]]
+    size ? @data[size] : @data
   end
 
   def self.fetch type, region
-    raw_data= cache[type] ||= begin
+    transformed= AWSCosts::Cache.get("/ec2/pricing/json/#{type}-od.json") do |data|
       result = {}
-      data= JSON.parse(HTTParty.get("http://aws.amazon.com/ec2/pricing/json/#{AWSCosts::EC2::TYPE_MAPPING[type]}-od.json").body)
       data['config']['regions'].each do |region|
         platforms = {}
         region['instanceTypes'].each do |instance_type|
-          type = instance_type['type']
           instance_type['sizes'].each do |instance_size|
             size = instance_size['size']
             platform_cost = Hash.new({})
@@ -48,7 +44,7 @@ class AWSCosts::EC2OnDemand
 
             platform_cost.each_pair do |p,v|
               platforms[p] = {} unless platforms.key?(p)
-              platforms[p][TYPE_TRANSLATION["#{type}.#{size}"]] = v
+              platforms[p][TYPE_TRANSLATION["#{instance_type['type']}.#{size}"]] = v
             end
           end
         end
@@ -56,12 +52,8 @@ class AWSCosts::EC2OnDemand
       end
       result
     end
-    self.new(type, raw_data[region])
+    type == 'sles' ? self.new(transformed[region]['linux']) :self.new(transformed[region][type])
   end
 
-  private
-  def self.cache
-    @@cache ||= {}
-  end
 end
 

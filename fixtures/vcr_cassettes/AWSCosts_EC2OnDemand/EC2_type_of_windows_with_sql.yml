@@ -1,0 +1,450 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/ec2/pricing/json/mswinSQL-od.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 27 May 2013 05:05:55 GMT
+      server:
+      - Server
+      x-amz-id-1:
+      - 057QNNTVVDA6E3DVG5NJ
+      x-amz-id-2:
+      - qJSz5SLI096TL12GLKA6MkoSZyiM/276U4tCiNKWhBU=
+      cache-control:
+      - max-age=0
+      expires:
+      - Mon, 27 May 2013 05:05:55 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      set-cookie:
+      - x-wl-uid=11NHnpaa3O9ieVGtEAIw6yhmPqtq5oJw9CT/OxBsW6MYkA9g2rO1xehWM57gluP371NEL84emVxY=;
+        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      - aws-session-id=184-9930509-8064329; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      vary:
+      - User-Agent
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n  {\n\t\"vers\": 0.01,\n\t\"config\": {\n\t\t\"rate\": \"perhr\",\n\t\t\"valueColumns\":
+        [\n\t\t\t\"mswinSQL\"\n\t\t],\n\t\t\"currencies\": [\n\t\t\t\"USD\"\n\t\t],\n\t\t\"regions\":
+        [\n\t\t\t{\n\t\t\t\t\"region\": \"us-east\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.629\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.744\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.974\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.434\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.580\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.160\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.084\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.654\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.307\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.167\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterComputeI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.390\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"4.410\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterHiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"7.250\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterGPUI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.850\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiIoODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"4.607\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiStoreODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"8.350\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
+        {\n\t\t\t\t\"region\": \"us-west-2\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.629\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.744\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.974\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.434\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.580\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.160\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.084\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.654\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.307\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.167\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterComputeI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"4.410\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterHiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"7.250\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterGPUI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiIoODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"4.607\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiStoreODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"8.350\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
+        {\n\t\t\t\t\"region\": \"us-west\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.639\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.764\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.014\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.514\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.660\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.320\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.140\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.766\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.531\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.251\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
+        {\n\t\t\t\t\"region\": \"eu-ireland\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.629\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.744\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.974\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.434\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.580\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.160\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.084\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.654\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.307\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.167\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterComputeI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"4.850\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterHiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"7.250\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"clusterGPUI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \" 3.85\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiIoODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"4.607\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiStoreODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"8.350\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
+        {\n\t\t\t\t\"region\": \"apac-sin\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.629\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.744\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.974\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.434\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.580\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.160\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.084\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.654\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.307\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.167\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
+        {\n\t\t\t\t\"region\": \"apac-tokyo\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.706\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.821\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.051\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.511\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.670\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.340\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.161\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.731\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.462\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.322\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
+        {\n\t\t\t\t\"region\": \"apac-syd\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.629\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.744\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.974\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.434\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.580\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.160\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.084\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.654\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.307\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.167\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
+        {\n\t\t\t\t\"region\": \"sa-east-1\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
+        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.664\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"0.814\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.114\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.714\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.860\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"3.720\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"1.314\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.114\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
+        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
+        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"4.227\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
+        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
+        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
+        \"mswinSQL\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
+        \"2.427\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t}\n}\n\n\n\n"
+    http_version: '1.1'
+  recorded_at: Mon, 27 May 2013 05:05:59 GMT
+recorded_with: VCR 2.0.1

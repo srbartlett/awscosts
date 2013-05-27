@@ -1,0 +1,740 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/ec2/pricing/json/rhel-od.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 27 May 2013 05:05:57 GMT
+      server:
+      - Server
+      x-amz-id-1:
+      - 0MHNM05SAZ6B4XT3EK7P
+      x-amz-id-2:
+      - lV14o4KoZ77finglRmezx2aq3Nlw6XXJ6EQR78hgDSCHipGa1yvumg==
+      cache-control:
+      - max-age=0
+      expires:
+      - Mon, 27 May 2013 05:05:57 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      set-cookie:
+      - x-wl-uid=1vXq71o7kSi6lfLH8ytEc0yKaOeDZwHxzyYmuinCiIRtgs3afk1vSjhj8v+2dkzsT3MNyoLvUe8U=;
+        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      - aws-session-id=185-0661130-5463451; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      vary:
+      - User-Agent
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n  {\n    \"vers\": 0.01,\n    \"config\": {\n        \"rate\":
+        \"perhr\",\n        \"valueColumns\": [\n            \"rhel\"\n        ],\n
+        \       \"currencies\": [\n            \"USD\"\n        ],\n        \"regions\":
+        [\n            {\n                \"region\": \"us-east\",\n                \"instanceTypes\":
+        [\n                    {\n                        \"type\": \"stdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.120\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.170\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.300\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.540\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.560\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.100\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.08\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.470\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.880\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.740\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.205\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.680\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.530\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterHiMemODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.630\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterGPUI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.200\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiIoODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.255\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiStoreODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"4.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"us-west-2\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.120\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.170\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.300\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.540\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.560\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.100\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.08\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.470\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.880\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.740\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.205\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.680\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"N/A\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.530\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterHiMemODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.630\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterGPUI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"N/A\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiIoODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.255\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiStoreODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"4.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"us-west\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.125\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.180\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.320\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.580\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.610\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.200\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.085\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.520\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.980\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.940\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.225\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.760\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"eu-ireland\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.125\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.180\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.320\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.580\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.610\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.200\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.085\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.520\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.980\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.940\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.225\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.760\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.830\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n\t\t\t\t\t{\n
+        \                       \"type\": \"clusterHiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.88\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterGPUI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.490\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiIoODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.580\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiStoreODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"5.030\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-sin\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.140\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.210\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.380\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.760\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.500\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.085\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.555\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.050\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.080\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.243\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.830\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-tokyo\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.155\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.220\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.419\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.769\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.829\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.635\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.087\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.574\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.079\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.135\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.254\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.855\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-syd\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.140\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.210\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.380\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.760\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.500\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.085\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.555\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.050\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.080\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.243\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.830\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"sa-east-1\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.140\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.210\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.380\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n{\n
+        \                       \"type\": \"secgenstdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.740\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.460\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.087\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.600\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.140\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.260\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.260\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"rhel\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.900\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            }\n        ]\n    }\n}\n\n\n\n"
+    http_version: '1.1'
+  recorded_at: Mon, 27 May 2013 05:06:01 GMT
+recorded_with: VCR 2.0.1

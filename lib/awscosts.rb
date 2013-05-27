@@ -3,6 +3,7 @@ require "awscosts/region"
 require "awscosts/ec2"
 require "awscosts/emr"
 require "awscosts/s3"
+require "awscosts/cache"
 
 module AWSCosts
 

@@ -1,6 +1,3 @@
-require 'httparty'
-require 'json'
-
 class AWSCosts::ELB
 
   def initialize data
@@ -16,9 +13,8 @@ class AWSCosts::ELB
   end
 
   def self.fetch region
-    @fetch ||= begin
+    transformed= AWSCosts::Cache.get('/ec2/pricing/pricing-elb.json') do |data|
       result = {}
-      data= JSON.parse(HTTParty.get('http://aws.amazon.com/ec2/pricing/pricing-elb.json').body)
       data['config']['regions'].each do |region|
         container = {}
         region['types'].each do |type|
@@ -30,7 +26,7 @@ class AWSCosts::ELB
       end
       result
     end
-    self.new(@fetch[region])
+    self.new(transformed[region])
   end
 
 end

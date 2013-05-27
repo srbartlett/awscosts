@@ -1,0 +1,726 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/ec2/pricing/json/linux-od.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 27 May 2013 05:05:54 GMT
+      server:
+      - Server
+      x-amz-id-1:
+      - 0KZA5G2T5CD2QEECNV76
+      x-amz-id-2:
+      - 3a6g6c9scb8iaeF14MR45EdBOA27Xl3TVpcLi9GdIOI=
+      cache-control:
+      - max-age=0
+      expires:
+      - Mon, 27 May 2013 05:05:54 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      set-cookie:
+      - x-wl-uid=1uheGsGwbPpwbgT58mOvF+jRMkzUsuM3rlf+x1jMuE/4A4VhWyTN0hoxabV1rnqnuIo31Y/shnsU=;
+        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      - aws-session-id=179-3138101-1762664; path=/; domain=.amazon.com; expires=Tue,
+        01-Jan-2036 00:00:01 GMT
+      vary:
+      - User-Agent
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n  {\n    \"vers\": 0.01,\n    \"config\": {\n        \"rate\":
+        \"perhr\",\n        \"valueColumns\": [\n            \"linux\"\n        ],\n
+        \       \"currencies\": [\n            \"USD\"\n        ],\n        \"regions\":
+        [\n            {\n                \"region\": \"us-east\",\n                \"instanceTypes\":
+        [\n                    {\n                        \"type\": \"stdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.060\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.120\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.240\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.480\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.500\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.000\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.020\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.410\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.820\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.640\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.145\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.580\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.300\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.400\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n\t\t\t\t\t{\n
+        \                       \"type\": \"clusterHiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.500\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterGPUI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.100\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiIoODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.100\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiStoreODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"4.600\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"us-west-2\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.060\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.120\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.240\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.480\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.500\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.000\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.020\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.410\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.820\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.640\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.145\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.580\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"N/A\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.400\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterHiMemODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.500\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterGPUI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"N/A\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiIoODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.100\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiStoreODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"4.600\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"us-west\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.065\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.130\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.260\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.520\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.550\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.100\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.025\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.460\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.920\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.840\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.165\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.660\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"eu-ireland\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.065\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.130\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.260\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.520\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.550\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.100\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.020\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.460\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.920\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.840\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.165\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.660\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterComputeI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxxxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"clusterGPUI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.36\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiIoODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"3.410\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-sin\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.080\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.160\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.320\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.640\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.400\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.020\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.495\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.990\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.980\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.183\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.730\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-tokyo\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.088\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.175\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.350\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.760\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.520\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.027\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.505\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.010\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.020\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.185\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.740\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"apac-syd\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.080\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.160\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.320\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.640\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"secgenstdODI\",\n
+        \                       \"sizes\": [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.700\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.400\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.020\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.495\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.990\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.980\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.183\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.730\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            },\n            {\n                \"region\":
+        \"sa-east-1\",\n                \"instanceTypes\": [\n                    {\n
+        \                       \"type\": \"stdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"sm\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.080\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.160\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"lg\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.320\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.640\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n{\n
+        \                       \"type\": \"secgenstdODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.680\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.360\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"uODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"u\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.027\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiMemODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.540\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"1.080\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xxxxl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"2.160\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    },\n
+        \                   {\n                        \"type\": \"hiCPUODI\",\n                        \"sizes\":
+        [\n                            {\n                                \"size\":
+        \"med\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.200\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           },\n                            {\n                                \"size\":
+        \"xl\",\n                                \"valueColumns\": [\n                                    {\n
+        \                                       \"name\": \"linux\",\n                                        \"prices\":
+        {\n                                            \"USD\": \"0.800\"\n                                        }\n
+        \                                   }\n                                ]\n
+        \                           }\n                        ]\n                    }\n
+        \               ]\n            }\n        ]\n    }\n}\n\n\n\n"
+    http_version: '1.1'
+  recorded_at: Mon, 27 May 2013 05:05:58 GMT
+recorded_with: VCR 2.0.1
