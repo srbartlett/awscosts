@@ -35,13 +35,14 @@ You can pass an argument to price to filter by the instance type.
 
 ### Reserved
 
-To find the **upfront** price of reserving Windows instance for light utilization
+To find the **upfront** price of reserving Windows instance for a one year term and light utilization
 
-    region.ec2.reserved(:windows, :light).upfront
+    region.ec2.reserved(:windows, :light).upfront(:one_year, :light)
 
-To find the **hourly** price of a `m1.large` reserved Windows with SQL instance for medium utilization
+To find the **hourly** price of a `m1.large` reserved Windows with SQL instance for
+a three year and medium utilization
 
-    region.ec2.reserved(:windows_with_sql, :medium).hourly('m1.large')
+    region.ec2.reserved(:windows_with_sql, :medium).hourly(:three_year, 'm1.large')
 
 ### ELB
 

@@ -67,7 +67,7 @@ class AWSCosts::EC2ReservedInstances
       end
       result
     end
-    self.new(transformed[region])
+    region == 'us-east-1' ? self.new(transformed['us-east']) : self.new(transformed[region])
   end
 
 end
