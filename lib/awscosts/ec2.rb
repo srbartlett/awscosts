@@ -2,6 +2,7 @@ require 'awscosts/ec2_on_demand'
 require 'awscosts/ec2_reserved_instances'
 require 'awscosts/ec2_elb'
 require 'awscosts/ec2_ebs'
+require 'awscosts/ec2_elastic_ips'
 
 class AWSCosts::EC2
 
@@ -28,6 +29,10 @@ class AWSCosts::EC2
 
   def ebs
     AWSCosts::EBS.fetch(self.region.price_mapping)
+  end
+
+  def elastic_ips
+    AWSCosts::ElasticIPs.fetch(self.region.price_mapping)
   end
 end
 
