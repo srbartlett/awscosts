@@ -30,7 +30,13 @@ class AWSCosts::EC2OnDemand
   end
 
   def self.fetch type, region
-    transformed= AWSCosts::Cache.get("/ec2/pricing/json/#{type}-od.json") do |data|
+    # handle inconsistent URL for RedHat
+    if type == 'rhel'
+      url = "/rhel/pricing-on-demand-instances.json"
+    else
+      url = "/ec2/pricing/json/#{type}-od.json"
+    end
+    transformed= AWSCosts::Cache.get(url) do |data|
       result = {}
       data['config']['regions'].each do |region|
         platforms = {}
