@@ -84,6 +84,15 @@ To find the price of Amazon EBS standard volumes in the Ireland region.
 
 `.price` also supports `:provisioned_iops` and `:snapshots_to_s3`
 
+### EIP
+
+To find the price of an non-attached Elastic IP address (EIP) per hour:
+
+    AWSCosts.region('eu-west-1').ec2.elastic_ips.price_non_attached_per_hour
+
+Other pricing available for EIPs includes: `price_additional_per_hour`, `price_remap_first_100`,
+`price_remap_over_100` and `price_one`
+
 
 ## Supported Services
 
@@ -96,6 +105,7 @@ The following AWS services are currently support (more to come):
 * Elastic Load Balancer (ELB)
 * Elastic Block Storage (EBS)
 * Elastic MapReduce (EMR)
+* Elastic IP Address (EIP)
 * S3
 
 EC2 platforms:
