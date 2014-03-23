@@ -44,7 +44,7 @@ class AWSCosts::EC2ReservedInstances
 
 
   def self.fetch type, utilisation, region
-    transformed= AWSCosts::Cache.get("/ec2/pricing/json/#{type}-ri-#{utilisation}.json") do |data|
+    transformed= AWSCosts::Cache.get("/pricing/1/deprecated/ec2/#{type}-ri-#{utilisation}.json", 'https://a0.awsstatic.com') do |data|
       result = {}
       data['config']['regions'].each do |region|
         platforms = {}
@@ -59,7 +59,7 @@ class AWSCosts::EC2ReservedInstances
 
             platform_cost.each_pair do |p,v|
               platforms[p] = {} unless platforms.key?(p)
-              platforms[p][TYPE_TRANSLATION["#{instance_type['type']}.#{size}"]] = v
+              platforms[p][size] = v
             end
           end
         end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://aws.amazon.com/ec2/pricing/json/mswinSQLWeb-od.json
+    uri: https://a0.awsstatic.com/pricing/1/deprecated/ec2/mswinSQLWeb-od.json
     body:
       encoding: US-ASCII
       string: ''
@@ -14,437 +14,1288 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Mon, 27 May 2013 05:05:56 GMT
-      server:
-      - Server
-      x-amz-id-1:
-      - 1DDT8S7ZCG84Q1XW91Z1
-      x-amz-id-2:
-      - GzYfQdFT/xQhotjjsyiu6u6vZuPOq7GQISJM+H0BNT8=
-      cache-control:
-      - max-age=0
-      expires:
-      - Mon, 27 May 2013 05:05:56 GMT
       content-type:
-      - text/html; charset=UTF-8
-      set-cookie:
-      - x-wl-uid=1XvlE7wVf2TGpMshZ1zGHR3HeAJbYznff9Ywz2OgYALPB2co7gO5LDUpXjLve/7v0lTwgifCTX7c=;
-        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
-      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
-        01-Jan-2036 00:00:01 GMT
-      - aws-session-id=184-4853793-4880745; path=/; domain=.amazon.com; expires=Tue,
-        01-Jan-2036 00:00:01 GMT
-      vary:
-      - User-Agent
-      transfer-encoding:
-      - chunked
+      - application/json; charset=utf-8
+      content-length:
+      - '93909'
+      connection:
+      - close
+      date:
+      - Sun, 23 Mar 2014 00:48:33 GMT
+      cache-control:
+      - max-age=3600
+      last-modified:
+      - Thu, 13 Mar 2014 05:27:03 GMT
+      etag:
+      - ! '"e9f7919108a4cedcf920e8ea3878ae6e"'
+      accept-ranges:
+      - bytes
+      server:
+      - AmazonS3
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 e936339e96d3e54aa59863db94e96bbe.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - 8Zl5fce0GlBX8sg76cgLmvj779MFeepIMQTdq8wF1oalyd63Yem4_Q==
     body:
       encoding: US-ASCII
-      string: ! "\n\n  {\n\t\"vers\": 0.01,\n\t\"config\": {\n\t\t\"rate\": \"perhr\",\n\t\t\"valueColumns\":
-        [\n\t\t\t\"mswinSQLWeb\"\n\t\t],\n\t\t\"currencies\": [\n\t\t\t\"USD\"\n\t\t],\n\t\t\"regions\":
-        [\n\t\t\t{\n\t\t\t\t\"region\": \"us-east\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.155\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.270\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.500\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.960\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.020\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.040\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.070\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.610\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.180\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"2.360\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.325\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.220\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterComputeI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.713\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.175\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterHiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"4.044\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterGPUI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.703\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiIoODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"3.660\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiStoreODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"5.144\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
-        {\n\t\t\t\t\"region\": \"us-west-2\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.155\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.270\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.500\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.960\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.020\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.040\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.070\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.610\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.180\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"2.360\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.325\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.220\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterComputeI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.175\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterHiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"4.044\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterGPUI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"N/A\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiIoODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"3.660\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiStoreODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"5.144\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
-        {\n\t\t\t\t\"region\": \"us-west\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.165\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.290\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.540\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.040\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.100\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.200\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.075\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.666\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.292\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"2.584\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.346\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.304\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
-        {\n\t\t\t\t\"region\": \"eu-ireland\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.155\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.270\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.500\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.960\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.020\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.040\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.075\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.610\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.180\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"2.360\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.325\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.220\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterComputeI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"3.175\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterHiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"4.044\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"clusterGPUI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.703\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiIoODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"3.660\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiStoreODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xxxxxxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"5.144\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
-        {\n\t\t\t\t\"region\": \"apac-sin\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.155\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.270\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.500\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.960\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.020\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.040\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.075\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.610\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.180\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"2.360\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.325\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.220\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
-        {\n\t\t\t\t\"region\": \"apac-tokyo\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.161\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.276\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.506\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.966\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.026\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.052\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.081\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.616\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.186\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"2.372\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.331\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.232\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
-        {\n\t\t\t\t\"region\": \"apac-syd\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.155\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.270\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.500\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.960\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.020\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.040\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.075\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.610\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.180\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"2.360\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.325\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.220\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},
-        {\n\t\t\t\t\"region\": \"sa-east-1\",\n\t\t\t\t\"instanceTypes\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\":
-        \"stdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"sm\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.190\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.340\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"lg\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.640\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.240\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"secgenstdODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.300\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"2.600\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"uODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"u\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.077\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiMemODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.840\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.640\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xxxxl\",\n\t\t\t\t\t\t\t\t\"valueColumns\":
-        [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\": \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\":
-        {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\": \"3.280\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\"type\": \"hiCPUODI\",\n\t\t\t\t\t\t\"sizes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"size\":
-        \"med\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"0.390\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t},
-        {\n\t\t\t\t\t\t\t\t\"size\": \"xl\",\n\t\t\t\t\t\t\t\t\"valueColumns\": [\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"name\":
-        \"mswinSQLWeb\",\n\t\t\t\t\t\t\t\t\t\t\"prices\": {\n\t\t\t\t\t\t\t\t\t\t\t\"USD\":
-        \"1.480\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t]\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t}\n}\n\n\n\n"
+      string: ! "{\n  \"vers\": 0.01,\n  \"config\": {\n    \"rate\": \"perhr\",\n
+        \   \"valueColumns\": [\n      \"vCPU\",\n      \"ECU\",\n      \"memoryGiB\",\n
+        \     \"storageGB\",\n      \"mswinSQLWeb\"\n    ],\n    \"currencies\": [\n
+        \     \"USD\"\n    ],\n    \"regions\": [\n      {\n        \"region\": \"us-east\",\n
+        \       \"instanceTypes\": [\n          {\n            \"type\": \"generalCurrentGen\",\n
+        \           \"sizes\": [\n              {\n                \"size\": \"m3.medium\",\n
+        \               \"vCPU\": \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\":
+        \"3.75\",\n                \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.230\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.459\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.918\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.836\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.155\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.270\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.500\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.960\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.316\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.632\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.263\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.526\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
+        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.052\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
+        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.325\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.220\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
+        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.175\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
+        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
+        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.957\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"gpuPreviousGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"cg1.4xlarge\",\n                \"vCPU\": \"16\",\n
+        \               \"ECU\": \"33.5\",\n                \"memoryGiB\": \"22.5\",\n
+        \               \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.703\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
+        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
+        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.610\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
+        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.180\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
+        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
+        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.360\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"4.044\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
+        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
+        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.993\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
+        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.986\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
+        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.971\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"7.942\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
+        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.144\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
+        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.660\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.070\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     },\n      {\n        \"region\": \"us-west-2\",\n        \"instanceTypes\":
+        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
+        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
+        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.230\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.459\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.918\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.836\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.155\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.270\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.500\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.960\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.316\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.632\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.263\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.526\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
+        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.052\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
+        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.325\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.220\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
+        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.175\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
+        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
+        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.957\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
+        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
+        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.610\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
+        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.180\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
+        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
+        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.360\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"4.044\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
+        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
+        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.993\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
+        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.986\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
+        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.971\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"7.942\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
+        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.144\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
+        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.660\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.070\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     },\n      {\n        \"region\": \"us-west\",\n        \"instanceTypes\":
+        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
+        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
+        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.248\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.495\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.990\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.980\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.165\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.290\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.540\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.040\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.316\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.632\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.263\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.526\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
+        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.052\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
+        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.346\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.304\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"60 SSD\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.009\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"m2.xlarge\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"17.1\",\n                \"storageGB\":
+        \"1 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.666\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.2xlarge\",\n
+        \               \"vCPU\": \"4\",\n                \"ECU\": \"13\",\n                \"memoryGiB\":
+        \"34.2\",\n                \"storageGB\": \"1 x 850\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.292\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.4xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"68.4\",\n                \"storageGB\":
+        \"2 x 840\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"2.584\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"storageCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"i2.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"30.5\",\n                \"storageGB\":
+        \"1 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.078\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
+        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.156\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
+        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"4.312\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"8.624\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.075\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     },\n      {\n        \"region\": \"eu-ireland\",\n        \"instanceTypes\":
+        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
+        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
+        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.230\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.459\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.918\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.836\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.155\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.270\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.500\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.960\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.316\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.632\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.263\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.526\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
+        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.052\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
+        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.325\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.220\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
+        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.175\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
+        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
+        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.957\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"gpuPreviousGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"cg1.4xlarge\",\n                \"vCPU\": \"16\",\n
+        \               \"ECU\": \"33.5\",\n                \"memoryGiB\": \"22.5\",\n
+        \               \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.703\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
+        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
+        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.610\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
+        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.180\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
+        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
+        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.360\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"4.044\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
+        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
+        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.993\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
+        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.986\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
+        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.971\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"7.942\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
+        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.144\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
+        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.660\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.075\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     },\n      {\n        \"region\": \"apac-sin\",\n        \"instanceTypes\":
+        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
+        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
+        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.230\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.459\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.918\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.836\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.155\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.270\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.500\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.960\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.316\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.632\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.263\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.526\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
+        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.052\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
+        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.325\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.220\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"m2.xlarge\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"17.1\",\n                \"storageGB\":
+        \"1 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.610\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.2xlarge\",\n
+        \               \"vCPU\": \"4\",\n                \"ECU\": \"13\",\n                \"memoryGiB\":
+        \"34.2\",\n                \"storageGB\": \"1 x 850\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.180\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.4xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"68.4\",\n                \"storageGB\":
+        \"2 x 840\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"2.360\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"storageCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"i2.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"30.5\",\n                \"storageGB\":
+        \"1 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.292\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
+        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.585\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
+        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.169\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"10.338\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
+        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"6.114\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.075\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     },\n      {\n        \"region\": \"apac-tokyo\",\n        \"instanceTypes\":
+        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
+        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
+        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.231\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.462\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.923\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.847\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.161\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.276\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.506\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.966\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.319\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.638\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.275\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.550\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
+        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.100\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
+        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.331\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.232\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
+        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.735\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
+        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
+        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.250\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
+        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
+        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.616\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
+        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.186\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
+        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
+        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.372\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"4.854\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
+        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
+        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.292\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
+        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.585\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
+        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.169\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"10.338\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
+        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"6.213\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
+        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
+        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"4.288\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.081\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     },\n      {\n        \"region\": \"apac-syd\",\n        \"instanceTypes\":
+        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
+        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
+        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.230\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.459\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.918\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.836\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.155\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.270\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.500\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.960\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.316\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.632\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.263\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.526\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
+        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.052\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
+        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.325\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.220\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"m2.xlarge\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"17.1\",\n                \"storageGB\":
+        \"1 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.610\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.2xlarge\",\n
+        \               \"vCPU\": \"4\",\n                \"ECU\": \"13\",\n                \"memoryGiB\":
+        \"34.2\",\n                \"storageGB\": \"1 x 850\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.180\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.4xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"68.4\",\n                \"storageGB\":
+        \"2 x 840\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"2.360\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"storageCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"i2.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"14\",\n                \"memoryGiB\": \"30.5\",\n                \"storageGB\":
+        \"1 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.292\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
+        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.585\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
+        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"5.169\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
+        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
+        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"10.338\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
+        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
+        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"6.114\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.075\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     },\n      {\n        \"region\": \"sa-east-1\",\n        \"instanceTypes\":
+        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
+        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
+        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.293\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
+        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.585\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.170\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
+        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
+        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
+        \                   \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"2.340\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
+        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
+        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
+        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.190\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
+        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
+        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.340\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m1.large\",\n
+        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
+        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.640\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
+        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.240\"\n                    }\n                  }\n                ]\n
+        \             }\n            ]\n          },\n          {\n            \"type\":
+        \"computePreviousGen\",\n            \"sizes\": [\n              {\n                \"size\":
+        \"c1.medium\",\n                \"vCPU\": \"2\",\n                \"ECU\":
+        \"5\",\n                \"memoryGiB\": \"1.7\",\n                \"storageGB\":
+        \"1 x 350\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"0.390\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"c1.xlarge\",\n
+        \               \"vCPU\": \"8\",\n                \"ECU\": \"20\",\n                \"memoryGiB\":
+        \"7\",\n                \"storageGB\": \"4 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"1.480\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
+        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
+        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.840\"\n                    }\n                  }\n
+        \               ]\n              },\n              {\n                \"size\":
+        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
+        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
+        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
+        \"mswinSQLWeb\",\n                    \"prices\": {\n                      \"USD\":
+        \"1.640\"\n                    }\n                  }\n                ]\n
+        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
+        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
+        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"3.280\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          },\n          {\n
+        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
+        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
+        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
+        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
+        [\n                  {\n                    \"name\": \"mswinSQLWeb\",\n                    \"prices\":
+        {\n                      \"USD\": \"0.077\"\n                    }\n                  }\n
+        \               ]\n              }\n            ]\n          }\n        ]\n
+        \     }\n    ]\n  }\n}\n"
     http_version: '1.1'
-  recorded_at: Mon, 27 May 2013 05:06:00 GMT
+  recorded_at: Sun, 23 Mar 2014 00:48:33 GMT
 recorded_with: VCR 2.0.1

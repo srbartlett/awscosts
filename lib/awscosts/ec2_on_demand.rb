@@ -30,7 +30,7 @@ class AWSCosts::EC2OnDemand
   end
 
   def self.fetch type, region
-    transformed= AWSCosts::Cache.get("/ec2/pricing/json/#{type}-od.json") do |data|
+    transformed= AWSCosts::Cache.get("/pricing/1/deprecated/ec2/#{type}-od.json", 'https://a0.awsstatic.com') do |data|
       result = {}
       data['config']['regions'].each do |region|
         platforms = {}
@@ -44,7 +44,7 @@ class AWSCosts::EC2OnDemand
 
             platform_cost.each_pair do |p,v|
               platforms[p] = {} unless platforms.key?(p)
-              platforms[p][TYPE_TRANSLATION["#{instance_type['type']}.#{size}"]] = v
+              platforms[p][size] = v
             end
           end
         end
@@ -52,7 +52,8 @@ class AWSCosts::EC2OnDemand
       end
       result
     end
-    type == 'sles' ? self.new(transformed[region]['linux']) :self.new(transformed[region][type])
+    #type == 'sles' ? self.new(transformed[region]['linux']) :
+    self.new(transformed[region][type])
   end
 
 end

@@ -1,0 +1,227 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aws.amazon.com/ec2/pricing/pricing-elastic-ips.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      date:
+      - Sat, 22 Mar 2014 23:41:33 GMT
+      server:
+      - Server
+      x-frame-options:
+      - SAMEORIGIN
+      x-amz-id-1:
+      - 1TDQCBW8CHADJ5PQS91Z
+      x-amz-id-2:
+      - I3OMEZAOHQLTXwCScZ7RpQ7Bp90AZrZdhgi9p+Sp+/NKHnUjuCzRNUs5dL6pOKXLV3zUma/1PC4K
+        rsZUHV+c7SjBaoCFvjab
+      location:
+      - /ec2/pricing/pricing-elastic-ips.json/
+      cache-control:
+      - no-store, no-cache, must-revalidate
+      content-length:
+      - '0'
+      content-type:
+      - text/plain
+      vary:
+      - User-Agent
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: '1.1'
+  recorded_at: Sat, 22 Mar 2014 23:41:33 GMT
+- request:
+    method: get
+    uri: http://aws.amazon.com/ec2/pricing/pricing-elastic-ips.json/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      date:
+      - Sat, 22 Mar 2014 23:41:34 GMT
+      server:
+      - Server
+      x-frame-options:
+      - SAMEORIGIN
+      x-amz-id-1:
+      - 1Z3MEHBEPZ8HYZQHPAT8
+      x-amz-id-2:
+      - Y2VF4nAnt893b3ZMEhAaX+ojt8QS9VEKKn2OTgJMPfdcFVnjtklktxl/OXNLukEyxS2QbwoLtu1C
+        XdLP8+7fhugPY/ZBtaWU
+      location:
+      - https://a0.awsstatic.com/pricing/1/deprecated/ec2/pricing-elastic-ips.json
+      content-type:
+      - text/html;charset=UTF-8
+      content-language:
+      - en-US
+      content-length:
+      - '0'
+      set-cookie:
+      - aws_lang=en; Domain=.amazon.com; Path=/
+      vary:
+      - User-Agent
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: '1.1'
+  recorded_at: Sat, 22 Mar 2014 23:41:34 GMT
+- request:
+    method: get
+    uri: https://a0.awsstatic.com/pricing/1/deprecated/ec2/pricing-elastic-ips.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      cookie:
+      - aws_lang=en
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '7444'
+      connection:
+      - close
+      date:
+      - Sat, 22 Mar 2014 23:41:37 GMT
+      cache-control:
+      - max-age=3600
+      last-modified:
+      - Thu, 13 Mar 2014 05:27:08 GMT
+      etag:
+      - ! '"89224941c6de47b6a122b4684a5fbe63"'
+      accept-ranges:
+      - bytes
+      server:
+      - AmazonS3
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 74ee1cbac8fd3a028c779d817d709eb3.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - UjO_ahAD11MaSEhpWGX-fzI9Id3JNMeh_jKiKjcPy67MPnNYtaiAqA==
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"vers\": 0.01,\n  \"config\": {\n    \"currencies\": [\n      \"USD\"\n
+        \   ],\n    \"rate\": \"perGB\",\n    \"regions\": [\n      {\n        \"region\":
+        \"us-east\",\n        \"types\": [\n          {\n            \"values\": [\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      },\n      {\n
+        \       \"region\": \"us-west-2\",\n        \"types\": [\n          {\n            \"values\":
+        [\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      },\n      {\n
+        \       \"region\": \"us-west\",\n        \"types\": [\n          {\n            \"values\":
+        [\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      },\n      {\n
+        \       \"region\": \"eu-ireland\",\n        \"types\": [\n          {\n            \"values\":
+        [\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      },\n      {\n
+        \       \"region\": \"apac-sin\",\n        \"types\": [\n          {\n            \"values\":
+        [\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      },\n      {\n
+        \       \"region\": \"apac-tokyo\",\n        \"types\": [\n          {\n            \"values\":
+        [\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      },\n      {\n
+        \       \"region\": \"apac-syd\",\n        \"types\": [\n          {\n            \"values\":
+        [\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      },\n      {\n
+        \       \"region\": \"sa-east-1\",\n        \"types\": [\n          {\n            \"values\":
+        [\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"oneEIP\"\n              },\n
+        \             {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perAdditionalEIPPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.005\"\n                },\n                \"rate\": \"perNonAttachedPerHour\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.00\"\n                },\n                \"rate\": \"perRemapFirst100\"\n
+        \             },\n              {\n                \"prices\": {\n                  \"USD\":
+        \"0.10\"\n                },\n                \"rate\": \"perRemapOver100\"\n
+        \             }\n            ]\n          }\n        ]\n      }\n    ]\n  }\n}\n"
+    http_version: '1.1'
+  recorded_at: Sat, 22 Mar 2014 23:41:36 GMT
+recorded_with: VCR 2.0.1

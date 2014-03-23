@@ -6,9 +6,9 @@ module AWSCosts::Cache
 
   BASE_URI = "http://aws.amazon.com"
 
-  def get uri, &block
+  def get uri, base_uri = BASE_URI, &block
     cache[uri] ||= begin
-      yield JSON.parse(HTTParty.get("#{BASE_URI}#{uri}").body)
+      yield JSON.parse(HTTParty.get("#{base_uri}#{uri}").body)
      end
   end
 
