@@ -80,7 +80,7 @@ And request pricing
 
 To find the price of Amazon EBS standard volumes in the Ireland region.
 
-    AWSCosts.region('eu-west-1').ec2.elb.price(:standard)
+    AWSCosts.region('eu-west-1').ec2.ebs.price(:standard)
 
 `.price` also supports `:provisioned_iops` and `:snapshots_to_s3`
 
