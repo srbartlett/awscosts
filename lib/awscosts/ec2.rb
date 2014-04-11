@@ -33,7 +33,9 @@ class AWSCosts::EC2
   end
 
   def ebs_optimized
-    AWSCosts::EBSOptimized.fetch(self.region.price_mapping)
+    r = self.region.name
+    r = 'us-east' if r == 'us-east-1'
+    AWSCosts::EBSOptimized.fetch(r)
   end
 
   def elastic_ips
