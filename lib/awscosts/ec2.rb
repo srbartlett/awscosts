@@ -20,8 +20,10 @@ class AWSCosts::EC2
     AWSCosts::EC2OnDemand.fetch(TYPES[type], self.region.price_mapping)
   end
 
-  def reserved(type, utilisation= :light)
-    AWSCosts::EC2ReservedInstances.fetch(TYPES[type], utilisation, self.region.name)
+  def reserved(type, utilisation = :light)
+    r = self.region.name
+    r = 'us-east' if r == 'us-east-1'
+    AWSCosts::EC2ReservedInstances.fetch(TYPES[type], utilisation, r)
   end
 
   def elb
