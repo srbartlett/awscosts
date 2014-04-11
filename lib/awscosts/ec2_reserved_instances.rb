@@ -53,7 +53,8 @@ class AWSCosts::EC2ReservedInstances
             platform_cost = Hash.new({})
 
             instance_size['valueColumns'].each do |value|
-              platform_cost[value['name']] = value['prices']['USD']
+              # Don't return 0.0 for "N/A" since that is misleading
+              platform_cost[value['name']] = value['prices']['USD'] == 'N/A' ? nil : value['prices']['USD'].to_f
             end
 
             platform_cost.each_pair do |p,v|
