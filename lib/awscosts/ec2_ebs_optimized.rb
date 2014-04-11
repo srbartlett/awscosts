@@ -18,7 +18,7 @@ class AWSCosts::EBSOptimized
         container = {}
         r['instanceTypes'].each do |type|
           type['sizes'].each do |size|
-            container[size['size']] = size['valueColumns'].select{|v| v['name'] == 'ebsOptimized'}.first['prices']['USD']
+            container[size['size']] = size['valueColumns'].select{|v| v['name'] == 'ebsOptimized'}.first['prices']['USD'].to_f
           end
         end
         result[r['region']] = container
