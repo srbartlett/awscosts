@@ -12,7 +12,7 @@ class AWSCosts::EBSOptimized
   end
 
   def self.fetch region
-    transformed = AWSCosts::Cache.get('/ec2/pricing/pricing-ebs-optimized-instances.json') do |data|
+    transformed = AWSCosts::Cache.get_jsonp('/pricing/1/ec2/pricing-ebs-optimized-instances.min.js') do |data|
       result = {}
       data['config']['regions'].each do |r|
         container = {}
@@ -25,7 +25,6 @@ class AWSCosts::EBSOptimized
       end
       result
     end
-    raise "EBS Optimized pricing in region #{region} not found." if transformed[region].nil?
     self.new(transformed[region])
   end
 

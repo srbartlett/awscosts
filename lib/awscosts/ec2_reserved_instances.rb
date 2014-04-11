@@ -42,13 +42,12 @@ class AWSCosts::EC2ReservedInstances
     end
   end
 
-
   def self.fetch type, utilisation, region
-    transformed= AWSCosts::Cache.get("/pricing/1/deprecated/ec2/#{type}-ri-#{utilisation}.json", 'https://a0.awsstatic.com') do |data|
+    transformed = AWSCosts::Cache.get_jsonp("/pricing/1/ec2/#{type}-ri-#{utilisation}.min.js") do |data|
       result = {}
-      data['config']['regions'].each do |region|
+      data['config']['regions'].each do |r|
         platforms = {}
-        region['instanceTypes'].each do |instance_type|
+        r['instanceTypes'].each do |instance_type|
           instance_type['sizes'].each do |instance_size|
             size = instance_size['size']
             platform_cost = Hash.new({})
@@ -63,11 +62,11 @@ class AWSCosts::EC2ReservedInstances
             end
           end
         end
-        result[region['region']] = platforms
+        result[r['region']] = platforms
       end
       result
     end
-    region == 'us-east-1' ? self.new(transformed['us-east']) : self.new(transformed[region])
+    self.new(transformed[region])
   end
 
 end
