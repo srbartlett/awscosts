@@ -14,14 +14,14 @@ class AWSCosts::EBSOptimized
   def self.fetch region
     transformed = AWSCosts::Cache.get('/ec2/pricing/pricing-ebs-optimized-instances.json') do |data|
       result = {}
-      data['config']['regions'].each do |region|
+      data['config']['regions'].each do |r|
         container = {}
-        region['instanceTypes'].each do |type|
+        r['instanceTypes'].each do |type|
           type['sizes'].each do |size|
             container[size['size']] = size['valueColumns'].select{|v| v['name'] == 'ebsOptimized'}.first['prices']['USD']
           end
         end
-        result[region['region']] = container
+        result[r['region']] = container
       end
       result
     end
