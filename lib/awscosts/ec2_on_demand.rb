@@ -22,7 +22,7 @@ class AWSCosts::EC2OnDemand
                      'hiIoODI.xxxxl' => 'hi1.4xlarge' }
 
   def initialize data
-    @data= data
+    @data = data
   end
 
   def price size=nil
