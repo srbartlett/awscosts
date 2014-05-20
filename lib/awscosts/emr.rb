@@ -32,6 +32,8 @@ class AWSCosts::EMR
 
   def self.fetch region
     transformed= AWSCosts::Cache.get("/elasticmapreduce/pricing/pricing-emr.json") do |data|
+      require 'awesome_print'
+      ap data
       result = {}
       data['config']['regions'].each do |region|
         platforms = {}
@@ -45,12 +47,13 @@ class AWSCosts::EMR
             end
             platform_cost.each_pair do |p,v|
               platforms[p] = {} unless platforms.key?(p)
-              platforms[p][TYPE_TRANSLATION["#{type}.#{size}"]] = v
+              platforms[p][size] = v
             end
           end
         end
         result[region['region']] = platforms
       end
+      ap result
       result
     end
     self.new(transformed[region])
