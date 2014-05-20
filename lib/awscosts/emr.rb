@@ -1,5 +1,4 @@
 require 'httparty'
-require 'json'
 
 class AWSCosts::EMR
 
@@ -32,8 +31,6 @@ class AWSCosts::EMR
 
   def self.fetch region
     transformed= AWSCosts::Cache.get("/elasticmapreduce/pricing/pricing-emr.json") do |data|
-      require 'awesome_print'
-      ap data
       result = {}
       data['config']['regions'].each do |region|
         platforms = {}
@@ -53,7 +50,6 @@ class AWSCosts::EMR
         end
         result[region['region']] = platforms
       end
-      ap result
       result
     end
     self.new(transformed[region])

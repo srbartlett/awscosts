@@ -1,5 +1,5 @@
 require 'httparty'
-require 'json'
+require 'oj'
 
 module AWSCosts::Cache
   extend self
@@ -8,7 +8,7 @@ module AWSCosts::Cache
   BASE_JSONP_URI = "http://a0.awsstatic.com"
 
   def get uri, base_uri = BASE_URI, &block
-    cache["#{base_uri}#{uri}"] ||= JSON.parse(HTTParty.get("#{base_uri}#{uri}").body)
+    cache["#{base_uri}#{uri}"] ||= Oj::load(HTTParty.get("#{base_uri}#{uri}").body)
     yield cache["#{base_uri}#{uri}"]
   end
 
@@ -37,7 +37,7 @@ module AWSCosts::Cache
     # Handle "json" with keys that are not quoted
     # When we get {foo: "1"} instead of {"foo": "1"}
     # http://stackoverflow.com/questions/2060356/parsing-json-without-quoted-keys
-    JSON.parse(body.gsub(/(\w+)\s*:/, '"\1":'))
+    Oj::load(body.gsub(/(\w+)\s*:/, '"\1":'))
   end
 end
 

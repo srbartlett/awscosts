@@ -2,32 +2,230 @@
 http_interactions:
 - request:
     method: get
-    uri: https://a0.awsstatic.com/pricing/1/deprecated/ec2/rhel-od.json
+    uri: http://a0.awsstatic.com/pricing/1/ec2/rhel-od.min.js
     body:
       encoding: US-ASCII
       string: ''
-    headers:
-      connection:
-      - close
+    headers: {}
   response:
     status:
       code: 200
       message: OK
     headers:
       content-type:
-      - application/json; charset=utf-8
+      - application/javascript; charset=utf-8
       content-length:
-      - '92499'
+      - '20543'
       connection:
       - close
       date:
-      - Sat, 22 Mar 2014 23:42:04 GMT
+      - Tue, 20 May 2014 17:15:39 GMT
       cache-control:
       - max-age=3600
       last-modified:
-      - Thu, 13 Mar 2014 05:26:37 GMT
+      - Tue, 20 May 2014 01:06:07 GMT
       etag:
-      - ! '"8709fed3d12007e2dea5b63de4021256"'
+      - ! '"679a3288540c70df337c4a36c89e5a74"'
+      accept-ranges:
+      - bytes
+      server:
+      - AmazonS3
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 02ec5eef9ff1cf6c34c2c468f023623a.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - qtOpg5_5N3ZcKo4Z4p7vickB3ocMmqsW8QXHx9fSXR__zHbwB7_yBA==
+    body:
+      encoding: US-ASCII
+      string: ! "/*\n * This file is intended for use only on aws.amazon.com. We do
+        not guarantee its availability or accuracy.\n *\n * Copyright 2014 Amazon.com,
+        Inc. or its affiliates. All rights reserved.\n */\ncallback({vers:0.01,config:{rate:\"perhr\",valueColumns:[\"vCPU\",\"memoryGiB\",\"storageGB\",\"rhel\"],currencies:[\"USD\"],regions:[{region:\"us-east\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.130\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.200\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.340\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.690\"}}]}]},{type:\"computeCurrentGen\",sizes:[{size:\"c3.large\",vCPU:\"2\",memoryGiB:\"3.75\",storageGB:\"2
+        x 16 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.165\"}}]},{size:\"c3.xlarge\",vCPU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.270\"}}]},{size:\"c3.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.550\"}}]},{size:\"c3.4xlarge\",vCPU:\"16\",memoryGiB:\"30\",storageGB:\"2
+        x 160 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.970\"}}]},{size:\"c3.8xlarge\",vCPU:\"32\",memoryGiB:\"60\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.810\"}}]}]},{type:\"gpuCurrentGen\",sizes:[{size:\"g2.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"60
+        SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.780\"}}]}]},{type:\"hiMemCurrentGen\",sizes:[{size:\"r3.large\",vCPU:\"2\",memoryGiB:\"15\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.235\"}}]},{size:\"r3.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 80 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.410\"}}]},{size:\"r3.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"1
+        x 160 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.830\"}}]},{size:\"r3.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"1
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"1.530\"}}]},{size:\"r3.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"2.930\"}}]}]},{type:\"storageCurrentGen\",sizes:[{size:\"i2.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.913\"}}]},{size:\"i2.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"2
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.835\"}}]},{size:\"i2.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"4
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.540\"}}]},{size:\"i2.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"8
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"6.950\"}}]},{size:\"hs1.8xlarge\",vCPU:\"16\",memoryGiB:\"117\",storageGB:\"24
+        x 2048\",valueColumns:[{name:\"rhel\",prices:{USD:\"4.730\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.080\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.104\"}}]}]}]},{region:\"us-west-2\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.130\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.200\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.340\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.690\"}}]}]},{type:\"computeCurrentGen\",sizes:[{size:\"c3.large\",vCPU:\"2\",memoryGiB:\"3.75\",storageGB:\"2
+        x 16 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.165\"}}]},{size:\"c3.xlarge\",vCPU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.270\"}}]},{size:\"c3.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.550\"}}]},{size:\"c3.4xlarge\",vCPU:\"16\",memoryGiB:\"30\",storageGB:\"2
+        x 160 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.970\"}}]},{size:\"c3.8xlarge\",vCPU:\"32\",memoryGiB:\"60\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.810\"}}]}]},{type:\"gpuCurrentGen\",sizes:[{size:\"g2.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"60
+        SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.780\"}}]}]},{type:\"hiMemCurrentGen\",sizes:[{size:\"r3.large\",vCPU:\"2\",memoryGiB:\"15\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.235\"}}]},{size:\"r3.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 80 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.410\"}}]},{size:\"r3.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"1
+        x 160 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.830\"}}]},{size:\"r3.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"1
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"1.530\"}}]},{size:\"r3.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"2.930\"}}]}]},{type:\"storageCurrentGen\",sizes:[{size:\"i2.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.913\"}}]},{size:\"i2.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"2
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.835\"}}]},{size:\"i2.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"4
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.540\"}}]},{size:\"i2.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"8
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"6.950\"}}]},{size:\"hs1.8xlarge\",vCPU:\"16\",memoryGiB:\"117\",storageGB:\"24
+        x 2048\",valueColumns:[{name:\"rhel\",prices:{USD:\"4.730\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.080\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.104\"}}]}]}]},{region:\"us-west\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.137\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.214\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.368\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.746\"}}]}]},{type:\"computeCurrentGen\",sizes:[{size:\"c3.large\",vCPU:\"2\",memoryGiB:\"3.75\",storageGB:\"2
+        x 16 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.180\"}}]},{size:\"c3.xlarge\",vCPU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.299\"}}]},{size:\"c3.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.608\"}}]},{size:\"c3.4xlarge\",vCPU:\"16\",memoryGiB:\"30\",storageGB:\"2
+        x 160 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.086\"}}]},{size:\"c3.8xlarge\",vCPU:\"32\",memoryGiB:\"60\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.042\"}}]}]},{type:\"gpuCurrentGen\",sizes:[{size:\"g2.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"60
+        SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.832\"}}]}]},{type:\"hiMemCurrentGen\",sizes:[{size:\"r3.large\",vCPU:\"2\",memoryGiB:\"15\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.255\"}}]},{size:\"r3.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 80 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.450\"}}]},{size:\"r3.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"1
+        x 160 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.910\"}}]},{size:\"r3.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"1
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"1.690\"}}]},{size:\"r3.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"3.250\"}}]}]},{type:\"storageCurrentGen\",sizes:[{size:\"i2.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.998\"}}]},{size:\"i2.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"2
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.006\"}}]},{size:\"i2.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"4
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.881\"}}]},{size:\"i2.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"8
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"7.632\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.085\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.107\"}}]}]}]},{region:\"eu-ireland\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.137\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.214\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.368\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.746\"}}]}]},{type:\"computeCurrentGen\",sizes:[{size:\"c3.large\",vCPU:\"2\",memoryGiB:\"3.75\",storageGB:\"2
+        x 16 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.180\"}}]},{size:\"c3.xlarge\",vCPU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.299\"}}]},{size:\"c3.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.608\"}}]},{size:\"c3.4xlarge\",vCPU:\"16\",memoryGiB:\"30\",storageGB:\"2
+        x 160 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.086\"}}]},{size:\"c3.8xlarge\",vCPU:\"32\",memoryGiB:\"60\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.042\"}}]}]},{type:\"gpuCurrentGen\",sizes:[{size:\"g2.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"60
+        SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.832\"}}]}]},{type:\"hiMemCurrentGen\",sizes:[{size:\"r3.large\",vCPU:\"2\",memoryGiB:\"15\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.255\"}}]},{size:\"r3.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 80 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.450\"}}]},{size:\"r3.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"1
+        x 160 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.910\"}}]},{size:\"r3.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"1
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"1.690\"}}]},{size:\"r3.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"3.250\"}}]}]},{type:\"storageCurrentGen\",sizes:[{size:\"i2.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.998\"}}]},{size:\"i2.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"2
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.006\"}}]},{size:\"i2.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"4
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.881\"}}]},{size:\"i2.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"8
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"7.632\"}}]},{size:\"hs1.8xlarge\",vCPU:\"16\",memoryGiB:\"117\",storageGB:\"24
+        x 2048\",valueColumns:[{name:\"rhel\",prices:{USD:\"5.030\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.080\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.107\"}}]}]}]},{region:\"apac-sin\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.158\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.256\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.452\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.914\"}}]}]},{type:\"computeCurrentGen\",sizes:[{size:\"c3.large\",vCPU:\"2\",memoryGiB:\"3.75\",storageGB:\"2
+        x 16 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.192\"}}]},{size:\"c3.xlarge\",vCPU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.325\"}}]},{size:\"c3.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.659\"}}]},{size:\"c3.4xlarge\",vCPU:\"16\",memoryGiB:\"30\",storageGB:\"2
+        x 160 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.188\"}}]},{size:\"c3.8xlarge\",vCPU:\"32\",memoryGiB:\"60\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.247\"}}]}]},{type:\"hiMemCurrentGen\",sizes:[{size:\"r3.large\",vCPU:\"2\",memoryGiB:\"15\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.270\"}}]},{size:\"r3.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 80 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.480\"}}]},{size:\"r3.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"1
+        x 160 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.970\"}}]},{size:\"r3.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"1
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"1.810\"}}]},{size:\"r3.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"3.490\"}}]}]},{type:\"storageCurrentGen\",sizes:[{size:\"i2.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.078\"}}]},{size:\"i2.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"2
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.165\"}}]},{size:\"i2.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"4
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"4.200\"}}]},{size:\"i2.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"8
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"8.270\"}}]},{size:\"hs1.8xlarge\",vCPU:\"16\",memoryGiB:\"117\",storageGB:\"24
+        x 2048\",valueColumns:[{name:\"rhel\",prices:{USD:\"5.700\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.080\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.118\"}}]}]}]},{region:\"apac-tokyo\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.161\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.263\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.465\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.940\"}}]}]},{type:\"computeCurrentGen\",sizes:[{size:\"c3.large\",vCPU:\"2\",memoryGiB:\"3.75\",storageGB:\"2
+        x 16 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.188\"}}]},{size:\"c3.xlarge\",vCPU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.315\"}}]},{size:\"c3.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.641\"}}]},{size:\"c3.4xlarge\",vCPU:\"16\",memoryGiB:\"30\",storageGB:\"2
+        x 160 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.151\"}}]},{size:\"c3.8xlarge\",vCPU:\"32\",memoryGiB:\"60\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.173\"}}]}]},{type:\"gpuCurrentGen\",sizes:[{size:\"g2.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"60
+        SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.028\"}}]}]},{type:\"hiMemCurrentGen\",sizes:[{size:\"r3.large\",vCPU:\"2\",memoryGiB:\"15\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.270\"}}]},{size:\"r3.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 80 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.480\"}}]},{size:\"r3.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"1
+        x 160 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.970\"}}]},{size:\"r3.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"1
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"1.810\"}}]},{size:\"r3.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"3.490\"}}]}]},{type:\"storageCurrentGen\",sizes:[{size:\"i2.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.061\"}}]},{size:\"i2.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"2
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.131\"}}]},{size:\"i2.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"4
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"4.132\"}}]},{size:\"i2.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"8
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"8.134\"}}]},{size:\"hs1.8xlarge\",vCPU:\"16\",memoryGiB:\"117\",storageGB:\"24
+        x 2048\",valueColumns:[{name:\"rhel\",prices:{USD:\"5.530\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.086\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.121\"}}]}]}]},{region:\"apac-syd\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.158\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.256\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.452\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.914\"}}]}]},{type:\"computeCurrentGen\",sizes:[{size:\"c3.large\",vCPU:\"2\",memoryGiB:\"3.75\",storageGB:\"2
+        x 16 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.192\"}}]},{size:\"c3.xlarge\",vCPU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.325\"}}]},{size:\"c3.2xlarge\",vCPU:\"8\",memoryGiB:\"15\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.659\"}}]},{size:\"c3.4xlarge\",vCPU:\"16\",memoryGiB:\"30\",storageGB:\"2
+        x 160 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.188\"}}]},{size:\"c3.8xlarge\",vCPU:\"32\",memoryGiB:\"60\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.247\"}}]}]},{type:\"hiMemCurrentGen\",sizes:[{size:\"r3.large\",vCPU:\"2\",memoryGiB:\"15\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.270\"}}]},{size:\"r3.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 80 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.480\"}}]},{size:\"r3.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"1
+        x 160 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"0.970\"}}]},{size:\"r3.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"1
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"1.810\"}}]},{size:\"r3.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"2
+        x 320 SSD\",valueColumns:[{name:\"linux\",prices:{USD:\"3.490\"}}]}]},{type:\"storageCurrentGen\",sizes:[{size:\"i2.xlarge\",vCPU:\"4\",memoryGiB:\"30.5\",storageGB:\"1
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.078\"}}]},{size:\"i2.2xlarge\",vCPU:\"8\",memoryGiB:\"61\",storageGB:\"2
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.165\"}}]},{size:\"i2.4xlarge\",vCPU:\"16\",memoryGiB:\"122\",storageGB:\"4
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"4.200\"}}]},{size:\"i2.8xlarge\",vCPU:\"32\",memoryGiB:\"244\",storageGB:\"8
+        x 800 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"8.270\"}}]},{size:\"hs1.8xlarge\",vCPU:\"16\",memoryGiB:\"117\",storageGB:\"24
+        x 2048\",valueColumns:[{name:\"rhel\",prices:{USD:\"5.700\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.080\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.118\"}}]}]}]},{region:\"sa-east-1\",instanceTypes:[{type:\"generalCurrentGen\",sizes:[{size:\"m3.medium\",vCPU:\"1\",memoryGiB:\"3.75\",storageGB:\"1
+        x 4 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.155\"}}]},{size:\"m3.large\",vCPU:\"2\",memoryGiB:\"7.5\",storageGB:\"1
+        x 32 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.250\"}}]},{size:\"m3.xlarge\",vCPU:\"4\",memoryGiB:\"15\",storageGB:\"2
+        x 40 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.441\"}}]},{size:\"m3.2xlarge\",vCPU:\"8\",memoryGiB:\"30\",storageGB:\"2
+        x 80 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.891\"}}]}]},{type:\"Micro
+        and Small Instances\",sizes:[{size:\"t1.micro\",vCPU:\"1\",memoryGiB:\"0.615\",storageGB:\"ebsonly\",valueColumns:[{name:\"os\",prices:{USD:\"0.087\"}}]},{size:\"m1.small\",vCPU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"os\",prices:{USD:\"0.118\"}}]}]}]}]}});"
+    http_version: '1.1'
+  recorded_at: Tue, 20 May 2014 17:15:38 GMT
+- request:
+    method: get
+    uri: http://a0.awsstatic.com/pricing/1/ec2/previous-generation/rhel-od.min.js
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/javascript; charset=utf-8
+      content-length:
+      - '12494'
+      connection:
+      - close
+      date:
+      - Thu, 15 May 2014 18:41:57 GMT
+      cache-control:
+      - max-age=3600
+      last-modified:
+      - Mon, 12 May 2014 21:20:59 GMT
+      etag:
+      - ! '"f2743cd32930ef43f5259be1b9169d8c"'
       accept-ranges:
       - bytes
       server:
@@ -35,1267 +233,108 @@ http_interactions:
       x-cache:
       - RefreshHit from cloudfront
       via:
-      - 1.1 41f313008af830d498dcb13814523bd7.cloudfront.net (CloudFront)
+      - 1.1 a0d3a3ed909b9fc3731aec9da54aa495.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - 1JIA39j6PPWakGBUz48RY8py5v-zFVUPMVEmt-YV-KwQj6JDLAft5A==
+      - AMcMjV1mPgDVySJsYk5S5fShqz_BCAaBe-S8YOaI3KlxqTd7v6OBmw==
     body:
       encoding: US-ASCII
-      string: ! "{\n  \"vers\": 0.01,\n  \"config\": {\n    \"rate\": \"perhr\",\n
-        \   \"valueColumns\": [\n      \"vCPU\",\n      \"ECU\",\n      \"memoryGiB\",\n
-        \     \"storageGB\",\n      \"rhel\"\n    ],\n    \"currencies\": [\n      \"USD\"\n
-        \   ],\n    \"regions\": [\n      {\n        \"region\": \"us-east\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.173\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.285\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.510\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.030\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.120\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.170\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.300\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.540\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.210\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.360\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.730\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.330\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
-        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.530\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
-        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.205\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.680\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
-        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"2.520\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
-        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
-        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.780\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"gpuPreviousGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"cg1.4xlarge\",\n                \"vCPU\": \"16\",\n
-        \               \"ECU\": \"33.5\",\n                \"memoryGiB\": \"22.5\",\n
-        \               \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"2.200\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
-        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
-        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.470\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
-        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.880\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
-        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
-        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"1.740\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.620\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
-        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
-        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.913\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
-        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.835\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
-        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.540\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"6.950\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
-        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"4.700\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
-        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"3.220\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.080\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     },\n      {\n        \"region\": \"us-west-2\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.173\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.285\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.510\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.030\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.120\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.170\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.300\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.540\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.210\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.360\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.730\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.330\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
-        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.530\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
-        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.205\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.680\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
-        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"2.520\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
-        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
-        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.780\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
-        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
-        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.470\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
-        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.880\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
-        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
-        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"1.740\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.620\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
-        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
-        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.913\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
-        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.835\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
-        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.540\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"6.950\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
-        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"4.700\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
-        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"3.220\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.080\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     },\n      {\n        \"region\": \"us-west\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.184\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.308\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.555\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.120\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.125\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.180\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.320\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.580\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.231\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.402\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.813\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.496\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
-        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.862\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
-        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.225\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.760\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"60 SSD\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.832\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"m2.xlarge\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"17.1\",\n                \"storageGB\":
-        \"1 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.520\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.2xlarge\",\n
-        \               \"vCPU\": \"4\",\n                \"ECU\": \"13\",\n                \"memoryGiB\":
-        \"34.2\",\n                \"storageGB\": \"1 x 850\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.980\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.4xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"68.4\",\n                \"storageGB\":
-        \"2 x 840\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"1.940\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"storageCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"i2.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"30.5\",\n                \"storageGB\":
-        \"1 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.998\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
-        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.006\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
-        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.881\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"7.632\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.085\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     },\n      {\n        \"region\": \"eu-ireland\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.184\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.308\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.555\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.120\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.125\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.180\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.320\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.580\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.231\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.402\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.813\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.496\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
-        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.862\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
-        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.225\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.760\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
-        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"2.820\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
-        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
-        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.832\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"gpuPreviousGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"cg1.4xlarge\",\n                \"vCPU\": \"16\",\n
-        \               \"ECU\": \"33.5\",\n                \"memoryGiB\": \"22.5\",\n
-        \               \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"2.480\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
-        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
-        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.520\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
-        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.980\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
-        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
-        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"1.940\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.870\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
-        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
-        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.998\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
-        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.006\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
-        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.881\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"7.632\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
-        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"5.020\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
-        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"3.220\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.085\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     },\n      {\n        \"region\": \"apac-sin\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.218\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.375\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.690\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.390\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.140\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.210\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.380\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.700\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.249\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.438\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.886\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.642\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
-        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.154\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
-        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.243\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.830\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"m2.xlarge\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"17.1\",\n                \"storageGB\":
-        \"1 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.555\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.2xlarge\",\n
-        \               \"vCPU\": \"4\",\n                \"ECU\": \"13\",\n                \"memoryGiB\":
-        \"34.2\",\n                \"storageGB\": \"1 x 850\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"1.050\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.4xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"68.4\",\n                \"storageGB\":
-        \"2 x 840\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"2.080\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"storageCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"i2.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"30.5\",\n                \"storageGB\":
-        \"1 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.078\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
-        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.165\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
-        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"4.200\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"8.270\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
-        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"5.690\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.085\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     },\n      {\n        \"region\": \"apac-tokyo\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.231\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.402\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.744\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.498\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.155\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.220\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.419\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.769\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.252\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.443\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.896\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.662\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
-        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.194\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
-        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.254\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.855\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"cc2.8xlarge\",\n
-        \               \"vCPU\": \"32\",\n                \"ECU\": \"88\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"4 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"3.100\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"gpuCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"g2.2xlarge\",\n                \"vCPU\": \"8\",\n
-        \               \"ECU\": \"26\",\n                \"memoryGiB\": \"15\",\n
-        \               \"storageGB\": \"60 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"1.092\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
-        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
-        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.574\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
-        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"1.079\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
-        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
-        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"2.135\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"cr1.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"88\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"2 x 120 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"4.450\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storageCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"i2.xlarge\",\n                \"vCPU\": \"4\",\n
-        \               \"ECU\": \"14\",\n                \"memoryGiB\": \"30.5\",\n
-        \               \"storageGB\": \"1 x 800 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"1.111\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
-        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.231\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
-        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"4.332\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"8.534\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
-        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"5.810\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"storagePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"hi1.4xlarge\",\n                \"vCPU\":
-        \"16\",\n                \"ECU\": \"35\",\n                \"memoryGiB\":
-        \"60.5\",\n                \"storageGB\": \"2 x 1024 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"3.558\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.087\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     },\n      {\n        \"region\": \"apac-syd\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.218\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.375\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.690\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.390\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.140\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.210\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.380\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.700\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computeCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"7\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"2 x 16 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.249\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.438\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"28\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.886\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"55\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 160 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.642\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c3.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"108\",\n                \"memoryGiB\": \"60\",\n                \"storageGB\":
-        \"2 x 320 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"3.154\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"computePreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"c1.medium\",\n                \"vCPU\":
-        \"2\",\n                \"ECU\": \"5\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 350\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.243\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"c1.xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"20\",\n                \"memoryGiB\": \"7\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.830\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"m2.xlarge\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"17.1\",\n                \"storageGB\":
-        \"1 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.555\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.2xlarge\",\n
-        \               \"vCPU\": \"4\",\n                \"ECU\": \"13\",\n                \"memoryGiB\":
-        \"34.2\",\n                \"storageGB\": \"1 x 850\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"1.050\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.4xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"68.4\",\n                \"storageGB\":
-        \"2 x 840\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"2.080\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"storageCurrentGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"i2.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"14\",\n                \"memoryGiB\": \"30.5\",\n                \"storageGB\":
-        \"1 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.078\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"27\",\n                \"memoryGiB\": \"61\",\n                \"storageGB\":
-        \"2 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"2.165\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.4xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"53\",\n                \"memoryGiB\": \"122\",\n                \"storageGB\":
-        \"4 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"4.200\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"i2.8xlarge\",\n                \"vCPU\": \"32\",\n                \"ECU\":
-        \"104\",\n                \"memoryGiB\": \"244\",\n                \"storageGB\":
-        \"8 x 800 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"8.270\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"hs1.8xlarge\",\n                \"vCPU\": \"16\",\n                \"ECU\":
-        \"35\",\n                \"memoryGiB\": \"117\",\n                \"storageGB\":
-        \"24 x 2048\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"5.690\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.085\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     },\n      {\n        \"region\": \"sa-east-1\",\n        \"instanceTypes\":
-        [\n          {\n            \"type\": \"generalCurrentGen\",\n            \"sizes\":
-        [\n              {\n                \"size\": \"m3.medium\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"3\",\n                \"memoryGiB\": \"3.75\",\n
-        \               \"storageGB\": \"1 x 4 SSD\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.213\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.large\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"6.5\",\n                \"memoryGiB\": \"7.5\",\n                \"storageGB\":
-        \"1 x 32 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.366\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"2 x 40 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"0.672\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m3.2xlarge\",\n                \"vCPU\": \"8\",\n                \"ECU\":
-        \"26\",\n                \"memoryGiB\": \"30\",\n                \"storageGB\":
-        \"2 x 80 SSD\",\n                \"valueColumns\": [\n                  {\n
-        \                   \"name\": \"rhel\",\n                    \"prices\": {\n
-        \                     \"USD\": \"1.354\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"generalPreviousGen\",\n            \"sizes\": [\n
-        \             {\n                \"size\": \"m1.small\",\n                \"vCPU\":
-        \"1\",\n                \"ECU\": \"1\",\n                \"memoryGiB\": \"1.7\",\n
-        \               \"storageGB\": \"1 x 160\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.140\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.medium\",\n                \"vCPU\": \"1\",\n                \"ECU\":
-        \"2\",\n                \"memoryGiB\": \"3.75\",\n                \"storageGB\":
-        \"1 x 410\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.210\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m1.large\",\n
-        \               \"vCPU\": \"2\",\n                \"ECU\": \"4\",\n                \"memoryGiB\":
-        \"7.5\",\n                \"storageGB\": \"2 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.380\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m1.xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"8\",\n                \"memoryGiB\": \"15\",\n                \"storageGB\":
-        \"4 x 420\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.700\"\n                    }\n                  }\n                ]\n
-        \             }\n            ]\n          },\n          {\n            \"type\":
-        \"computePreviousGen\",\n            \"sizes\": [\n              {\n                \"size\":
-        \"c1.medium\",\n                \"vCPU\": \"2\",\n                \"ECU\":
-        \"5\",\n                \"memoryGiB\": \"1.7\",\n                \"storageGB\":
-        \"1 x 350\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"0.260\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"c1.xlarge\",\n
-        \               \"vCPU\": \"8\",\n                \"ECU\": \"20\",\n                \"memoryGiB\":
-        \"7\",\n                \"storageGB\": \"4 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.900\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"hiMemCurrentGen\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"m2.xlarge\",\n                \"vCPU\": \"2\",\n
-        \               \"ECU\": \"6.5\",\n                \"memoryGiB\": \"17.1\",\n
-        \               \"storageGB\": \"1 x 420\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.600\"\n                    }\n                  }\n
-        \               ]\n              },\n              {\n                \"size\":
-        \"m2.2xlarge\",\n                \"vCPU\": \"4\",\n                \"ECU\":
-        \"13\",\n                \"memoryGiB\": \"34.2\",\n                \"storageGB\":
-        \"1 x 850\",\n                \"valueColumns\": [\n                  {\n                    \"name\":
-        \"rhel\",\n                    \"prices\": {\n                      \"USD\":
-        \"1.140\"\n                    }\n                  }\n                ]\n
-        \             },\n              {\n                \"size\": \"m2.4xlarge\",\n
-        \               \"vCPU\": \"8\",\n                \"ECU\": \"26\",\n                \"memoryGiB\":
-        \"68.4\",\n                \"storageGB\": \"2 x 840\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"2.260\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          },\n          {\n
-        \           \"type\": \"uI\",\n            \"sizes\": [\n              {\n
-        \               \"size\": \"t1.micro\",\n                \"vCPU\": \"1\",\n
-        \               \"ECU\": \"variable\",\n                \"memoryGiB\": \"0.615\",\n
-        \               \"storageGB\": \"ebsonly\",\n                \"valueColumns\":
-        [\n                  {\n                    \"name\": \"rhel\",\n                    \"prices\":
-        {\n                      \"USD\": \"0.087\"\n                    }\n                  }\n
-        \               ]\n              }\n            ]\n          }\n        ]\n
-        \     }\n    ]\n  }\n}\n"
+      string: ! "/*\n * This file is intended for use only on aws.amazon.com. We do
+        not guarantee its availability or accuracy.\n *\n * Copyright 2014 Amazon.com,
+        Inc. or its affiliates. All rights reserved.\n */\ncallback({vers:0.01,config:{rate:\"perhr\",valueColumns:[\"vCPU\",\"ECU\",\"memoryGiB\",\"storageGB\",\"rhel\"],currencies:[\"USD\"],regions:[{region:\"us-east\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.104\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.147\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.235\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.410\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.190\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.650\"}}]},{size:\"cc2.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"60.5\",storageGB:\"4
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.130\"}}]}]},{type:\"gpuPreviousGen\",sizes:[{size:\"cg1.4xlarge\",vCPU:\"16\",ECU:\"33.5\",memoryGiB:\"22.5\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.230\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.305\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.550\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.110\"}}]},{size:\"cr1.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"244\",storageGB:\"2
+        x 120 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.630\"}}]}]},{type:\"storagePreviousGen\",sizes:[{size:\"hi1.4xlarge\",vCPU:\"16\",ECU:\"35\",memoryGiB:\"60.5\",storageGB:\"2
+        x 1024 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.230\"}}]}]}]},{region:\"us-west-2\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.104\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.147\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.235\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.410\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.190\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.650\"}}]},{size:\"cc2.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"60.5\",storageGB:\"4
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.130\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.305\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.550\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.110\"}}]},{size:\"cr1.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"244\",storageGB:\"2
+        x 120 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.630\"}}]}]},{type:\"storagePreviousGen\",sizes:[{size:\"hi1.4xlarge\",vCPU:\"16\",ECU:\"35\",memoryGiB:\"60.5\",storageGB:\"2
+        x 1024 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.230\"}}]}]}]},{region:\"us-west\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.107\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.155\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.250\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.439\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.208\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.722\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.335\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.610\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.230\"}}]}]}]},{region:\"eu-ireland\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.107\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.155\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.250\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.439\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.208\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.722\"}}]},{size:\"cc2.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"60.5\",storageGB:\"4
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.380\"}}]}]},{type:\"gpuPreviousGen\",sizes:[{size:\"cg1.4xlarge\",vCPU:\"16\",ECU:\"33.5\",memoryGiB:\"22.5\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.490\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.335\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.610\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.230\"}}]},{size:\"cr1.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"244\",storageGB:\"2
+        x 120 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.880\"}}]}]},{type:\"storagePreviousGen\",sizes:[{size:\"hi1.4xlarge\",vCPU:\"16\",ECU:\"35\",memoryGiB:\"60.5\",storageGB:\"2
+        x 1024 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.230\"}}]}]}]},{region:\"apac-sin\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.118\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.177\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.293\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.527\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.224\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.785\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.356\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.652\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.313\"}}]}]}]},{region:\"apac-tokyo\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.121\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.182\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.303\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.546\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.218\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.762\"}}]},{size:\"cc2.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"60.5\",storageGB:\"4
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"2.479\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.347\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.635\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.280\"}}]},{size:\"cr1.8xlarge\",vCPU:\"32\",ECU:\"88\",memoryGiB:\"244\",storageGB:\"2
+        x 120 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"4.235\"}}]}]},{type:\"storagePreviousGen\",sizes:[{size:\"hi1.4xlarge\",vCPU:\"16\",ECU:\"35\",memoryGiB:\"60.5\",storageGB:\"2
+        x 1024 SSD\",valueColumns:[{name:\"rhel\",prices:{USD:\"3.406\"}}]}]}]},{region:\"apac-syd\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.118\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.177\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.293\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.527\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.224\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.785\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.356\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.652\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.313\"}}]}]}]},{region:\"sa-east-1\",instanceTypes:[{type:\"generalPreviousGen\",sizes:[{size:\"m1.small\",vCPU:\"1\",ECU:\"1\",memoryGiB:\"1.7\",storageGB:\"1
+        x 160\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.118\"}}]},{size:\"m1.medium\",vCPU:\"1\",ECU:\"2\",memoryGiB:\"3.75\",storageGB:\"1
+        x 410\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.177\"}}]},{size:\"m1.large\",vCPU:\"2\",ECU:\"4\",memoryGiB:\"7.5\",storageGB:\"2
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.293\"}}]},{size:\"m1.xlarge\",vCPU:\"4\",ECU:\"8\",memoryGiB:\"15\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.527\"}}]}]},{type:\"computePreviousGen\",sizes:[{size:\"c1.medium\",vCPU:\"2\",ECU:\"5\",memoryGiB:\"1.7\",storageGB:\"1
+        x 350\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.239\"}}]},{size:\"c1.xlarge\",vCPU:\"8\",ECU:\"20\",memoryGiB:\"7\",storageGB:\"4
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.848\"}}]}]},{type:\"Memory
+        Optimized - Previous Generation\",sizes:[{size:\"m2.xlarge\",vCPU:\"2\",ECU:\"6.5\",memoryGiB:\"17.1\",storageGB:\"1
+        x 420\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.383\"}}]},{size:\"m2.2xlarge\",vCPU:\"4\",ECU:\"13\",memoryGiB:\"34.2\",storageGB:\"1
+        x 850\",valueColumns:[{name:\"rhel\",prices:{USD:\"0.705\"}}]},{size:\"m2.4xlarge\",vCPU:\"8\",ECU:\"26\",memoryGiB:\"68.4\",storageGB:\"2
+        x 840\",valueColumns:[{name:\"rhel\",prices:{USD:\"1.421\"}}]}]}]}]}});"
     http_version: '1.1'
-  recorded_at: Sun, 23 Mar 2014 00:48:37 GMT
-recorded_with: VCR 2.0.1
+  recorded_at: Tue, 20 May 2014 17:15:39 GMT
+recorded_with: VCR 2.9.0

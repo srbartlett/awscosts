@@ -1,5 +1,4 @@
 require 'httparty'
-require 'json'
 
 class AWSCosts::S3Storage
 

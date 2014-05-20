@@ -1,5 +1,4 @@
 require 'httparty'
-require 'json'
 class AWSCosts::EC2ReservedInstances
 
   TERMS = { one_year: 'yrTerm1', three_year: 'yrTerm3' }
