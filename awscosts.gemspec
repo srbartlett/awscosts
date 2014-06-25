@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'awscosts/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "awscosts"
+  spec.name          = "placed-awscosts"
   spec.version       = AWSCosts::VERSION
   spec.authors       = ["Stephen Bartlett"]
   spec.email         = ["stephenb@rtlett.org"]
