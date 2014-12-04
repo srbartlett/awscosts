@@ -4,13 +4,13 @@ class AWSCosts::Region
   attr_reader :name, :full_name, :price_mapping
 
   SUPPORTED =  {
-    'us-east-1' => { :full_name => 'US (Northern Virginia)', :price_mapping => 'us-east' },
-    'us-west-1' => { :full_name => 'US (Northern California)', :price_mapping => 'us-west' },
+    'us-east-1' => { :full_name => 'US (Northern Virginia)', :price_mapping => 'us-east-1' },
+    'us-west-1' => { :full_name => 'US (Northern California)', :price_mapping => 'us-west-1' },
     'us-west-2' => { :full_name => 'US (Oregon)', :price_mapping => 'us-west-2' },
-    'eu-west-1' => { :full_name => 'EU (Ireland)', :price_mapping => 'eu-ireland' },
-    'ap-southeast-1' => { :full_name => 'Asia Pacific (Singapore)', :price_mapping => 'apac-sin' },
-    'ap-southeast-2' => { :full_name => 'Asia Pacific (Sydney)', :price_mapping => 'apac-syd' },
-    'ap-northeast-1' => { :full_name => 'Asia Pacific (Tokyo)', :price_mapping => 'apac-tokyo' },
+    'eu-west-1' => { :full_name => 'EU (Ireland)', :price_mapping => 'eu-west-1' },
+    'ap-southeast-1' => { :full_name => 'Asia Pacific (Singapore)', :price_mapping => 'ap-southeast-1' },
+    'ap-southeast-2' => { :full_name => 'Asia Pacific (Sydney)', :price_mapping => 'ap-southeast-2' },
+    'ap-northeast-1' => { :full_name => 'Asia Pacific (Tokyo)', :price_mapping => 'ap-northeast-1' },
     'sa-east-1' => { :full_name => 'South America (Sao Paulo)', :price_mapping => 'sa-east-1' }
   }
 
