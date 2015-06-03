@@ -3,13 +3,17 @@ require 'spec_helper'
 describe AWSCosts::ElasticIPs do
   use_vcr_cassette
 
-  subject { AWSCosts.region('ap-southeast-2').ec2.elastic_ips}
+  AWSCosts::Region::SUPPORTED.keys.each do |region|
 
-  its(:price_one) { should == 0 }
-  its(:price_additional_per_hour) { should > 0 }
-  its(:price_non_attached_per_hour) { should > 0 }
-  its(:price_remap_first_100) { should == 0 }
-  its(:price_remap_over_100) { should > 0 }
+    context "in the region of #{region}" do
+      subject { AWSCosts.region(region).ec2.elastic_ips}
 
+      it { expect(subject.price_one).to eql(0.0) }
+      it { expect(subject.price_additional_per_hour).to be > 0 }
+      it { expect(subject.price_non_attached_per_hour).to be > 0 }
+      it { expect(subject.price_remap_first_100).to eql(0.0) }
+      it { expect(subject.price_remap_over_100).to be > 0 }
+    end
+  end
 end
 

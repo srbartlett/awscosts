@@ -3,10 +3,15 @@ require 'spec_helper'
 describe AWSCosts::S3Storage do
   use_vcr_cassette
 
-  subject { AWSCosts.region('ap-northeast-1').s3.storage}
+  AWSCosts::Region::SUPPORTED.keys.each do |region|
+    context "in the region of #{region}" do
+      subject { AWSCosts.region(region).s3.storage}
 
-  its(:price) { should have_key('firstTBstorage') }
-  its(:price) { should have_key('next49TBstorage') }
+      it { expect(subject.price).to have_key('firstTBstorage') }
+      it { expect(subject.price).to have_key('next49TBstorage') }
+    end
+  end
 end
+
 
 

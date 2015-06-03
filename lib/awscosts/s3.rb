@@ -6,20 +6,31 @@ class AWSCosts::S3
 
   attr_reader :region
 
+  REGION_MAPPING = {
+       'us-east-1' => "us-std",
+       'us-west-1' => "us-west-1",
+       'us-west-2' => "us-west-2",
+       'eu-west-1' => "eu-west-1",
+       'ap-southeast-1' => "ap-southeast-1",
+       'ap-southeast-2' =>"ap-southeast-2",
+       'ap-northeast-1' =>"ap-northeast-1",
+       'sa-east-1' => "sa-east-1"
+  }
+
   def initialize region
-    @region = region
+    @region = REGION_MAPPING[region.name]
   end
 
   def storage
-    AWSCosts::S3Storage.fetch(self.region.price_mapping)
+    AWSCosts::S3Storage.fetch(self.region)
   end
 
   def data_transfer
-    AWSCosts::S3DataTransfer.fetch(self.region.price_mapping)
+    AWSCosts::S3DataTransfer.fetch(self.region)
   end
 
   def requests
-    AWSCosts::S3Requests.fetch(self.region.price_mapping)
+    AWSCosts::S3Requests.fetch(self.region)
   end
 end
 

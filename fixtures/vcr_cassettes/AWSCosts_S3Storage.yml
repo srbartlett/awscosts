@@ -6,586 +6,1424 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
     headers:
-      connection:
-      - close
+      date:
+      - Wed, 03 Jun 2015 01:58:22 GMT
+      server:
+      - Server
+      x-frame-options:
+      - SAMEORIGIN
+      x-amz-id-1:
+      - 0FQV9AD47ZXTYZ3R4RDK
+      location:
+      - "/s3/pricing/pricing-storage.json/"
+      cache-control:
+      - no-store, no-cache, must-revalidate
+      content-length:
+      - '0'
+      vary:
+      - User-Agent
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: '1.1'
+  recorded_at: Wed, 03 Jun 2015 01:58:33 GMT
+- request:
+    method: get
+    uri: http://aws.amazon.com/s3/pricing/pricing-storage.json/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      date:
+      - Wed, 03 Jun 2015 01:58:23 GMT
+      server:
+      - Server
+      x-frame-options:
+      - SAMEORIGIN
+      x-amz-id-1:
+      - 1HCX0DET0BJ4V9QAMQZM
+      location:
+      - https://a0.awsstatic.com/pricing/1/deprecated/s3/pricing-storage-s3.json
+      content-type:
+      - text/html;charset=UTF-8
+      content-length:
+      - '0'
+      set-cookie:
+      - aws_lang=en; Domain=.amazon.com; Path=/
+      vary:
+      - User-Agent
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: '1.1'
+  recorded_at: Wed, 03 Jun 2015 01:58:34 GMT
+- request:
+    method: get
+    uri: https://a0.awsstatic.com/pricing/1/deprecated/s3/pricing-storage-s3.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      cookie:
+      - aws_lang=en
   response:
     status:
       code: 200
       message: OK
     headers:
-      date:
-      - Mon, 27 May 2013 05:40:12 GMT
-      server:
-      - Server
-      x-amz-id-1:
-      - 1ZVRCVCGK1WZA0BAG6F9
-      x-amz-id-2:
-      - e7fRTTc8+1dJSJqatHTszdZHkUNf11aCHTH6cuUR/PI=
-      cache-control:
-      - max-age=0
-      expires:
-      - Mon, 27 May 2013 05:40:12 GMT
       content-type:
-      - text/html; charset=UTF-8
-      set-cookie:
-      - x-wl-uid=1+NKMD81LSiMngOl83ltSAD0Swx2JCkvVwzlqdTBuiQSK3UulVwXVTAKqqOPf9OIKDep0mQpOc3o=;
-        path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
-      - aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue,
-        01-Jan-2036 00:00:01 GMT
-      - aws-session-id=182-1722408-2749539; path=/; domain=.amazon.com; expires=Tue,
-        01-Jan-2036 00:00:01 GMT
-      vary:
-      - User-Agent
-      transfer-encoding:
-      - chunked
+      - application/json
+      content-length:
+      - '32230'
+      connection:
+      - close
+      date:
+      - Wed, 03 Jun 2015 01:58:26 GMT
+      cache-control:
+      - max-age=3600
+      last-modified:
+      - Tue, 02 Jun 2015 18:17:36 GMT
+      etag:
+      - '"d08ac9d2c88529739454d8b51c6964a9"'
+      accept-ranges:
+      - bytes
+      server:
+      - AmazonS3
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 4ff9c5dd57eaf7423eb3c9b43cea1f9a.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - jNIlaIKv4FAilWIw1ksYmzwAAqpkjgBAODhaKhzpejcW81CHlTFFSQ==
     body:
-      encoding: US-ASCII
-      string: ! "\n\n  {\n    \"vers\": 0.01,\n    \"config\": {\n        \"currencies\":
-        [\"USD\"],\n        \"rate\": \"perGB\",\n        \"valueColumns\": [\"storage\",
-        \n                         \"reducedRedundancyStorage\",\n                         \"glacierStorage\"],\n
-        \       \"footnotes\": {\n            \"&dagger;\": \"designed109Durable\",\n
-        \           \"&Dagger;\": \"designed49sDurable\"\n        },\n        \"regions\":
-        [\n            {\n                \"region\": \"us-east\",\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.095\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.076\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.080\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.064\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.070\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.056\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.065\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.052\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.048\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.055\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.037\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            },\n
-        \           {\n                \"region\": \"us-west-2\",\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.095\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.076\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.080\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.064\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.070\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.056\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.065\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.052\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.048\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.055\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.037\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.010\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            },\n
-        \           {\n                \"region\": \"us-west\",\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.105\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.084\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.090\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.072\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.075\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.070\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.056\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.065\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.052\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.047\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            },\n
-        \           {\n                \"region\": \"eu-ireland\",\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.095\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.076\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.080\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.064\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.070\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.056\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.065\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.052\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.048\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.055\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.037\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.011\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            },\n
-        \           {\n                \"region\": \"apac-sin\",\n                \"footnotes\":
-        {\n                    \"*\": \"glacierRegions\"\n                },\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.095\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.076\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.080\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.064\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.070\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.056\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.065\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.052\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.048\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.055\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.037\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            },\n
-        \           {\n                \"region\": \"apac-tokyo\",\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.100\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.080\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.012\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.085\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.068\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.012\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.075\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.012\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.070\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.056\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.012\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.065\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.052\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.012\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.044\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.012\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            },\n\t\t\t{\n
-        \               \"region\": \"apac-syd\",\n                \"footnotes\":
-        {\n                    \"*\": \"glacierRegions\"\n                },\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.105\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.084\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.090\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.072\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.075\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.070\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.056\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.065\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.052\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.060\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.047\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            },\n
-        \           {\n                \"region\": \"sa-east-1\",\n                \"footnotes\":
-        {\n                    \"*\": \"glacierRegions\"\n                },\n                \"tiers\":
-        [\n                    {\n                        \"name\": \"firstTBstorage\",\n
-        \                       \"storageTypes\": [\n                            {\n
-        \                               \"type\": \"storage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.130\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"reducedRedundancyStorage\",\n                                \"prices\":
-        {\n                                    \"USD\": \"0.104\"\n                                }\n
-        \                           },\n                            {\n                                \"type\":
-        \"glacierStorage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next49TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.110\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.088\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next450TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.095\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.076\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next500TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.090\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.072\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"next4000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.080\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.064\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    },\n                    {\n
-        \                       \"name\": \"over5000TBstorage\",\n                        \"storageTypes\":
-        [\n                            {\n                                \"type\":
-        \"storage\",\n                                \"prices\": {\n                                    \"USD\":
-        \"0.075\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"reducedRedundancyStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"0.050\"\n                                }\n                            },\n
-        \                           {\n                                \"type\": \"glacierStorage\",\n
-        \                               \"prices\": {\n                                    \"USD\":
-        \"N/A*\"\n                                }\n                            }\n
-        \                       ]\n                    }\n                ]\n            }\n
-        \       ]\n    }\n}\n\n\n\n"
+      encoding: UTF-8
+      string: |
+        {
+          "vers": 0.01,
+          "config": {
+            "currencies": [
+              "USD"
+            ],
+            "rate": "perGB",
+            "valueColumns": [
+              "storage",
+              "reducedRedundancyStorage",
+              "glacierStorage"
+            ],
+            "footnotes": {
+              "&dagger;": "designed109Durable",
+              "&Dagger;": "designed49sDurable"
+            },
+            "regions": [
+              {
+                "region": "us-std",
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0300"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0240"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0295"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0236"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0290"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0232"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0285"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0228"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0280"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0224"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0275"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0220"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "us-west-2",
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0300"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0240"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0295"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0236"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0290"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0232"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0285"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0228"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0280"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0224"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0275"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0220"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0100"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "us-west-1",
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0330"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0264"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0324"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0259"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0319"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0255"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0313"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0250"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0308"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0246"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0302"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0242"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "eu-west-1",
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0300"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0240"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0295"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0236"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0290"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0232"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0285"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0228"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0280"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0224"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0275"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0220"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0110"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "eu-central-1",
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0324"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0260"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0319"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0255"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0314"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0251"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0308"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0247"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0303"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0242"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0297"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0238"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "ap-southeast-1",
+                "footnotes": {
+                  "*": "glacierRegions"
+                },
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0300"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0240"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0295"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0236"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0290"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0232"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0285"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0228"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0280"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0224"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0275"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0220"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "ap-northeast-1",
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0330"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0264"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0114"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0324"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0259"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0114"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0319"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0255"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0114"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0313"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0250"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0114"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0308"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0246"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0114"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0302"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0242"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0114"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "ap-southeast-2",
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0330"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0264"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0324"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0259"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0319"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0255"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0313"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0250"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0308"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0246"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0302"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0242"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "0.0120"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "sa-east-1",
+                "footnotes": {
+                  "*": "glacierRegions"
+                },
+                "tiers": [
+                  {
+                    "name": "firstTBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0408"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0326"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next49TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0401"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0320"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next450TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0394"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0315"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next500TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0387"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0309"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "next4000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0380"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0304"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "over5000TBstorage",
+                    "storageTypes": [
+                      {
+                        "type": "storage",
+                        "prices": {
+                          "USD": "0.0374"
+                        }
+                      },
+                      {
+                        "type": "reducedRedundancyStorage",
+                        "prices": {
+                          "USD": "0.0299"
+                        }
+                      },
+                      {
+                        "type": "glacierStorage",
+                        "prices": {
+                          "USD": "N/A*"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
     http_version: '1.1'
-  recorded_at: Mon, 27 May 2013 05:40:18 GMT
-recorded_with: VCR 2.0.1
+  recorded_at: Wed, 03 Jun 2015 01:58:36 GMT
+recorded_with: VCR 2.9.3

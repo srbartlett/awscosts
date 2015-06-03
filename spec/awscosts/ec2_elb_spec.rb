@@ -5,8 +5,8 @@ describe AWSCosts::ELB do
 
   subject { AWSCosts.region('ap-southeast-2').ec2.elb}
 
-  its(:price_per_hour) { should > 0 }
-  its(:price_per_gb) { should > 0 }
+  it { expect(subject.price_per_hour).to be > 0 }
+  it { expect(subject.price_per_gb).to be > 0 }
 
 end
 
