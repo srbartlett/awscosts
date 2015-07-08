@@ -1,10 +1,6 @@
 require 'httparty'
-require 'json'
 
 class AWSCosts::EBS
-
-  TYPES = { 'ebsVols' => :standard, 'ebsPIOPSVols' => :provisioned_iops,
-            'ebsSnapsToS3' => :snapshots_to_s3 }
 
   def initialize data
     @data= data
@@ -15,17 +11,10 @@ class AWSCosts::EBS
   end
 
   def self.fetch region
-    transformed= AWSCosts::Cache.get('/ec2/pricing/pricing-ebs.json') do |data|
+    transformed = AWSCosts::Cache.get_jsonp('/pricing/1/ebs/pricing-ebs.min.js') do |data|
       result = {}
-      data['config']['regions'].each do |region|
-        container = {}
-        region['types'].each do |type|
-          container[TYPES[type['name']]] = {}
-          type['values'].each do |value|
-            container[TYPES[type['name']]][value['rate']] = value['prices']['USD'].to_f
-          end
-        end
-        result[region['region']] = container
+      data['config']['regions'].each do |r|
+        result[r['region']] = r['types']
       end
       result
     end

@@ -1,10 +1,9 @@
 require 'httparty'
-require 'json'
 
 class AWSCosts::S3Storage
 
   def initialize data
-    @data= data
+    @data = data
   end
 
   def price tier = nil
@@ -12,18 +11,19 @@ class AWSCosts::S3Storage
   end
 
   def self.fetch region
-    transformed= AWSCosts::Cache.get("/s3/pricing/pricing-storage.json") do |data|
+    transformed = AWSCosts::Cache.get_jsonp("/pricing/1/s3/pricing-storage-s3.min.js") do |data|
       result = {}
-      data['config']['regions'].each do |region|
+      data['config']['regions'].each do |r|
         tiers = {}
-        region['tiers'].each do |tier|
+        r['tiers'].each do |tier|
           storage_type = {}
           tiers[tier['name']] = storage_type
           tier['storageTypes'].each do |type|
-            storage_type[type['type']] = type['prices']['USD'].to_f
+            # Don't return 0.0 for "N/A*" since that is misleading
+            storage_type[type['type']] = type['prices']['USD'] == 'N/A*' ? nil : type['prices']['USD'].to_f
           end
         end
-        result[region['region']] = tiers
+        result[r['region']] = tiers
       end
       result
     end

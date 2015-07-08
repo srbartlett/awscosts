@@ -13,13 +13,13 @@ http_interactions:
       message: Moved Permanently
     headers:
       date:
-      - Wed, 03 Jun 2015 01:58:09 GMT
+      - Wed, 08 Jul 2015 05:30:55 GMT
       server:
       - Server
       x-frame-options:
       - SAMEORIGIN
       x-amz-id-1:
-      - 09XRK9QC0VX5J2XNV5YM
+      - 141M52QPN01MX31FMV29
       location:
       - "/elasticmapreduce/pricing/pricing-emr.json/"
       cache-control:
@@ -34,7 +34,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: '1.1'
-  recorded_at: Wed, 03 Jun 2015 01:58:21 GMT
+  recorded_at: Wed, 08 Jul 2015 05:31:19 GMT
 - request:
     method: get
     uri: http://aws.amazon.com/elasticmapreduce/pricing/pricing-emr.json/
@@ -48,13 +48,13 @@ http_interactions:
       message: Moved Permanently
     headers:
       date:
-      - Wed, 03 Jun 2015 01:58:11 GMT
+      - Wed, 08 Jul 2015 05:30:56 GMT
       server:
       - Server
       x-frame-options:
       - SAMEORIGIN
       x-amz-id-1:
-      - 1361Y6VHA4DPWW457H49
+      - 13CZYR60JSSF9SX1RCQ0
       location:
       - https://a0.awsstatic.com/pricing/1/deprecated/emr/pricing-emr.json
       content-type:
@@ -69,7 +69,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: '1.1'
-  recorded_at: Wed, 03 Jun 2015 01:58:22 GMT
+  recorded_at: Wed, 08 Jul 2015 05:31:21 GMT
 - request:
     method: get
     uri: https://a0.awsstatic.com/pricing/1/deprecated/emr/pricing-emr.json
@@ -91,11 +91,11 @@ http_interactions:
       connection:
       - close
       date:
-      - Wed, 03 Jun 2015 01:58:14 GMT
+      - Wed, 08 Jul 2015 05:30:59 GMT
       cache-control:
       - max-age=3600
       last-modified:
-      - Tue, 02 Jun 2015 18:21:53 GMT
+      - Fri, 26 Jun 2015 06:11:27 GMT
       etag:
       - '"dfe183ca9a820fbd34aea98deaf814c7"'
       accept-ranges:
@@ -105,9 +105,9 @@ http_interactions:
       x-cache:
       - Miss from cloudfront
       via:
-      - 1.1 93b5788f362379a4094dc028226a4a36.cloudfront.net (CloudFront)
+      - 1.1 9d4e31d14f9ca2b4887f0d5ace789fde.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - _bK5sCedCuIdxscZLjQsapRpoHM8_IMfgpjO5ZjnqtaSM5Fl67m9kw==
+      - gjrIzBJRIouCww2qHsnl_-kn--kJNzt9cM1wkYC_NMYG_g_oEXO2jg==
     body:
       encoding: UTF-8
       string: |
@@ -4982,5 +4982,5 @@ http_interactions:
           }
         }
     http_version: '1.1'
-  recorded_at: Wed, 03 Jun 2015 01:58:26 GMT
+  recorded_at: Wed, 08 Jul 2015 05:31:23 GMT
 recorded_with: VCR 2.9.3

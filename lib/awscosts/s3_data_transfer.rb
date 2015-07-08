@@ -1,12 +1,11 @@
 require 'httparty'
-require 'json'
 
 class AWSCosts::S3DataTransfer
 
   TYPES = %w{dataXferInS3, dataXferOutS3CrossRegion, dataXferOutS3}
 
   def initialize data
-    @data= data
+    @data = data
   end
 
   def price type = nil
@@ -14,17 +13,18 @@ class AWSCosts::S3DataTransfer
   end
 
   def self.fetch region
-    transformed= AWSCosts::Cache.get("/s3/pricing/pricing-data-transfer.json") do |data|
+    transformed = AWSCosts::Cache.get_jsonp("/pricing/1/s3/pricing-data-transfer-s3.min.js") do |data|
       result = {}
-      data['config']['regions'].each do |region|
+      data['config']['regions'].each do |r|
         types = {}
-        region['types'].each do |type|
+        r['types'].each do |type|
           types[type['name']] = {}
           type['tiers'].each do |tier|
-            types[type['name']][tier['name']] = tier['prices']['USD'].to_f
+            # Don't return 0.0 for "contactus" since that is misleading
+            types[type['name']][tier['name']] = tier['prices']['USD'] == 'contactus' ? nil : tier['prices']['USD'].to_f
           end
         end
-        result[region['region']] = types
+        result[r['region']] = types
       end
       result
     end

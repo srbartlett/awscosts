@@ -22,15 +22,15 @@ class AWSCosts::S3
   end
 
   def storage
-    AWSCosts::S3Storage.fetch(self.region)
+    AWSCosts::S3Storage.fetch(@region)
   end
 
   def data_transfer
-    AWSCosts::S3DataTransfer.fetch(self.region)
+    AWSCosts::S3DataTransfer.fetch(@region)
   end
 
   def requests
-    AWSCosts::S3Requests.fetch(self.region)
+    AWSCosts::S3Requests.fetch(@region)
   end
 end
 

@@ -1,5 +1,4 @@
 require 'httparty'
-require 'json'
 
 class AWSCosts::EMR
 
@@ -45,7 +44,7 @@ class AWSCosts::EMR
             end
             platform_cost.each_pair do |p,v|
               platforms[p] = {} unless platforms.key?(p)
-              platforms[p][TYPE_TRANSLATION["#{type}.#{size}"]] = v
+              platforms[p][size] = v
             end
           end
         end

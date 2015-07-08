@@ -25,16 +25,16 @@ class AWSCosts::ElasticIPs
   end
 
   def self.fetch region
-    transformed= AWSCosts::Cache.get('/ec2/pricing/pricing-elastic-ips.json') do |data|
+    transformed = AWSCosts::Cache.get_jsonp('/pricing/1/ec2/pricing-elastic-ips.min.js') do |data|
       result = {}
-      data['config']['regions'].each do |region|
+      data['config']['regions'].each do |r|
         container = {}
-        region['types'].each do |type|
+        r['types'].each do |type|
           type['values'].each do |value|
             container[value['rate']] = value['prices']['USD'].to_f
           end
         end
-        result[region['region']] = container
+        result[r['region']] = container
       end
       result
     end
