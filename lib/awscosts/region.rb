@@ -8,6 +8,7 @@ class AWSCosts::Region
     'us-west-1' => { :full_name => 'US (Northern California)', :price_mapping => 'us-west-1', :emr_mapping => 'us-west' },
     'us-west-2' => { :full_name => 'US (Oregon)', :price_mapping => 'us-west-2', :emr_mapping => 'us-west-2' },
     'eu-west-1' => { :full_name => 'EU (Ireland)', :price_mapping => 'eu-west-1', :emr_mapping => 'eu-ireland' },
+    'eu-central-1' => { :full_name => 'EU (Frankfurt)' },
     'ap-southeast-1' => { :full_name => 'Asia Pacific (Singapore)', :price_mapping => 'ap-southeast-1', :emr_mapping => 'apac-sin' },
     'ap-southeast-2' => { :full_name => 'Asia Pacific (Sydney)', :price_mapping => 'ap-southeast-2', :emr_mapping => 'apac-syd' },
     'ap-northeast-1' => { :full_name => 'Asia Pacific (Tokyo)', :price_mapping => 'ap-northeast-1', :emr_mapping => 'apac-tokyo' },

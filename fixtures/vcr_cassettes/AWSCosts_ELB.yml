@@ -33,9 +33,9 @@ http_interactions:
       x-cache:
       - RefreshHit from cloudfront
       via:
-      - 1.1 f25f60d7eb31f20a86f3511c23f2678c.cloudfront.net (CloudFront)
+      - 1.1 b6f20840f7bfe6a3390082c883cf88b6.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - xgyKs6Tg23MLuCOPRjsYeE9tBvK8hIUavsOf3I1PaOAer7xP3Pwidw==
+      - _Mmatne8Ybr5w51b_4ikVThAhqKLa7vyN8EZd2I2jfrXCc1VtFu_uQ==
     body:
       encoding: UTF-8
       string: |-
@@ -46,5 +46,5 @@ http_interactions:
          */
         callback({vers:0.01,config:{currencies:["USD"],rate:"perInstanceHour@1min",regions:[{region:"us-east",types:[{values:[{prices:{USD:"0.025"},rate:"perELBHour"},{prices:{USD:"0.008"},rate:"perGBProcessed"}]}]},{region:"us-west-2",types:[{values:[{prices:{USD:"0.025"},rate:"perELBHour"},{prices:{USD:"0.008"},rate:"perGBProcessed"}]}]},{region:"us-west",types:[{values:[{prices:{USD:"0.028"},rate:"perELBHour"},{prices:{USD:"0.008"},rate:"perGBProcessed"}]}]},{region:"eu-ireland",types:[{values:[{prices:{USD:"0.028"},rate:"perELBHour"},{prices:{USD:"0.008"},rate:"perGBProcessed"}]}]},{region:"apac-sin",types:[{values:[{prices:{USD:"0.028"},rate:"perELBHour"},{prices:{USD:"0.008"},rate:"perGBProcessed"}]}]},{region:"apac-tokyo",types:[{values:[{prices:{USD:"0.027"},rate:"perELBHour"},{prices:{USD:"0.008"},rate:"perGBProcessed"}]}]},{region:"apac-syd",types:[{values:[{prices:{USD:"0.028"},rate:"perELBHour"},{prices:{USD:"0.008"},rate:"perGBProcessed"}]}]},{region:"sa-east-1",types:[{values:[{prices:{USD:"0.034"},rate:"perELBHour"},{prices:{USD:"0.011"},rate:"perGBProcessed"}]}]},{region:"us-gov-west-1",types:[{values:[{prices:{USD:"0.032"},rate:"perELBHour"},{prices:{USD:"0.010"},rate:"perGBProcessed"}]}]}]}});
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 05:31:10 GMT
+  recorded_at: Wed, 08 Jul 2015 06:40:29 GMT
 recorded_with: VCR 2.9.3

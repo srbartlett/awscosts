@@ -30,12 +30,14 @@ http_interactions:
       - bytes
       server:
       - AmazonS3
+      age:
+      - '240'
       x-cache:
-      - RefreshHit from cloudfront
+      - Hit from cloudfront
       via:
-      - 1.1 f25f60d7eb31f20a86f3511c23f2678c.cloudfront.net (CloudFront)
+      - 1.1 b6f20840f7bfe6a3390082c883cf88b6.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - ytCLk1e8oTq6GiL6RceRt5s113aHdytTY4CgLwCoFqVx3rdcrbiKjg==
+      - 3RmYbJcXy-LyJyvIF9wxAp2ocSzLY7uug6kAz5lqDUm7h9Ko0eT8oQ==
     body:
       encoding: UTF-8
       string: |-
@@ -46,5 +48,5 @@ http_interactions:
          */
         callback({vers:0.01,config:{currencies:["USD"],valueColumns:["pricing"],regions:[{region:"us-std",footnotes:{"&dagger;":"chargesForGlacierDeletes03","&Dagger;":"glacierNotes01"},tiers:[{name:"putcopypost",prices:{USD:"0.005"},rate:"per1kReq"},{name:"glacierRequests",prices:{USD:"0.05"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.004"},rate:"per10kReq"},{name:"glacierDataRestore",prices:{USD:"Free &Dagger;"}}]},{region:"us-west-2",footnotes:{"&dagger;":"chargesForGlacierDeletes03","&Dagger;":"glacierNotes01"},tiers:[{name:"putcopypost",prices:{USD:"0.005"},rate:"per1kReq"},{name:"glacierRequests",prices:{USD:"0.05"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.004"},rate:"per10kReq"},{name:"glacierDataRestore",prices:{USD:"Free &Dagger;"}}]},{region:"us-west-1",footnotes:{"&dagger;":"chargesForGlacierDeletes033","&Dagger;":"glacierNotes011"},tiers:[{name:"putcopypost",prices:{USD:"0.0055"},rate:"per1kReq"},{name:"glacierRequests",prices:{USD:"0.055"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.0044"},rate:"per10kReq"},{name:"glacierDataRestore",prices:{USD:"Free &Dagger;"}}]},{region:"eu-west-1",footnotes:{"&dagger;":"chargesForGlacierDeletes033","&Dagger;":"glacierNotes011"},tiers:[{name:"putcopypost",prices:{USD:"0.005"},rate:"per1kReq"},{name:"glacierRequests",prices:{USD:"0.055"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.004"},rate:"per10kReq"},{name:"glacierDataRestore",prices:{USD:"Free &Dagger;"}}]},{region:"eu-central-1",footnotes:{"&dagger;":"chargesForGlacierDeletes036","&Dagger;":"glacierNotes012"},tiers:[{name:"putcopypost",prices:{USD:"0.0054"},rate:"per1kReq"},{name:"glacierRequests",prices:{USD:"0.060"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.0043"},rate:"per10kReq"},{name:"glacierDataRestore",prices:{USD:"Free &Dagger;"}}]},{region:"ap-southeast-1",footnotes:{"&dagger;":"noChargeForDeletes"},tiers:[{name:"putcopypost",prices:{USD:"0.005"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.004"},rate:"per10kReq"}]},{region:"ap-northeast-1",footnotes:{"&dagger;":"chargesForGlacierDeletes0342","&Dagger;":"glacierNotes0114"},tiers:[{name:"putcopypost",prices:{USD:"0.0047"},rate:"per1kReq"},{name:"glacierRequests",prices:{USD:"0.0571"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.0037"},rate:"per10kReq"},{name:"glacierDataRestore",prices:{USD:"Free &Dagger;"}}]},{region:"ap-southeast-2",footnotes:{"&dagger;":"chargesForGlacierDeletes036","&Dagger;":"glacierNotes012"},tiers:[{name:"putcopypost",prices:{USD:"0.0055"},rate:"per1kReq"},{name:"glacierRequests",prices:{USD:"0.060"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"}},{name:"getEtc",prices:{USD:"0.0044"},rate:"per10kReq"},{name:"glacierDataRestore",prices:{USD:"Free &Dagger;"}}]},{region:"sa-east-1",footnotes:{"&dagger;":"noChargeForDeletes"},tiers:[{name:"putcopypost",prices:{USD:"0.007"},rate:"per1kReq"},{name:"deleteRequests",prices:{USD:"Free &dagger;"},rate:"per1kReq"},{name:"getEtc",prices:{USD:"0.0056"},rate:"per10kReq"}]}]}});
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 06:36:44 GMT
+  recorded_at: Wed, 08 Jul 2015 06:40:44 GMT
 recorded_with: VCR 2.9.3

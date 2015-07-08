@@ -13,13 +13,13 @@ http_interactions:
       message: Moved Permanently
     headers:
       date:
-      - Wed, 08 Jul 2015 05:30:55 GMT
+      - Wed, 08 Jul 2015 06:40:17 GMT
       server:
       - Server
       x-frame-options:
       - SAMEORIGIN
       x-amz-id-1:
-      - 141M52QPN01MX31FMV29
+      - 1TWRTQ8KS9F97X6E5ESJ
       location:
       - "/elasticmapreduce/pricing/pricing-emr.json/"
       cache-control:
@@ -34,7 +34,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 05:31:19 GMT
+  recorded_at: Wed, 08 Jul 2015 06:40:42 GMT
 - request:
     method: get
     uri: http://aws.amazon.com/elasticmapreduce/pricing/pricing-emr.json/
@@ -48,13 +48,13 @@ http_interactions:
       message: Moved Permanently
     headers:
       date:
-      - Wed, 08 Jul 2015 05:30:56 GMT
+      - Wed, 08 Jul 2015 06:40:18 GMT
       server:
       - Server
       x-frame-options:
       - SAMEORIGIN
       x-amz-id-1:
-      - 13CZYR60JSSF9SX1RCQ0
+      - 0AHZQ9PJGXZ9PF2VPFDC
       location:
       - https://a0.awsstatic.com/pricing/1/deprecated/emr/pricing-emr.json
       content-type:
@@ -69,7 +69,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 05:31:21 GMT
+  recorded_at: Wed, 08 Jul 2015 06:40:43 GMT
 - request:
     method: get
     uri: https://a0.awsstatic.com/pricing/1/deprecated/emr/pricing-emr.json
@@ -103,11 +103,11 @@ http_interactions:
       server:
       - AmazonS3
       x-cache:
-      - Miss from cloudfront
+      - RefreshHit from cloudfront
       via:
       - 1.1 9d4e31d14f9ca2b4887f0d5ace789fde.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - gjrIzBJRIouCww2qHsnl_-kn--kJNzt9cM1wkYC_NMYG_g_oEXO2jg==
+      - oRqS01_gBmwgeSWKKbIyD-USxD0VHgu3vGGe3I1nalWGqiogEKIH2A==
     body:
       encoding: UTF-8
       string: |
@@ -4982,5 +4982,5 @@ http_interactions:
           }
         }
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 05:31:23 GMT
+  recorded_at: Wed, 08 Jul 2015 06:40:44 GMT
 recorded_with: VCR 2.9.3

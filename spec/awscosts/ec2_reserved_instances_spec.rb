@@ -6,6 +6,9 @@ describe AWSCosts::EC2ReservedInstances do
 
     AWSCosts::Region::SUPPORTED.keys.each do |r|
 
+      # no pricing for Frankfurt, yet!
+      next if r == 'eu-central-1'
+
       context "in the #{r} region" do
         [:windows, :linux, :windows_with_sql, :windows_with_sql_web, :rhel, :sles].each do |type|
           context "EC2 type of #{type}" do

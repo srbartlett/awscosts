@@ -4,6 +4,8 @@ describe AWSCosts::ElasticIPs do
   use_vcr_cassette
 
   AWSCosts::Region::SUPPORTED.keys.each do |region|
+    # no pricing for Frankfurt, yet!
+    next if region == 'eu-central-1'
 
     context "in the region of #{region}" do
       subject { AWSCosts.region(region).ec2.elastic_ips}
