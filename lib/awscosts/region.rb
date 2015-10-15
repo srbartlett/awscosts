@@ -4,15 +4,15 @@ class AWSCosts::Region
   attr_reader :name, :full_name, :price_mapping, :emr_mapping
 
   SUPPORTED =  {
-    'us-east-1' => { :full_name => 'US (Northern Virginia)', :price_mapping => 'us-east-1', :emr_mapping => 'us-east' },
-    'us-west-1' => { :full_name => 'US (Northern California)', :price_mapping => 'us-west-1', :emr_mapping => 'us-west' },
-    'us-west-2' => { :full_name => 'US (Oregon)', :price_mapping => 'us-west-2', :emr_mapping => 'us-west-2' },
-    'eu-west-1' => { :full_name => 'EU (Ireland)', :price_mapping => 'eu-west-1', :emr_mapping => 'eu-ireland' },
+    'us-east-1' => { :full_name => 'US (Northern Virginia)' },
+    'us-west-1' => { :full_name => 'US (Northern California)' },
+    'us-west-2' => { :full_name => 'US (Oregon)' },
+    'eu-west-1' => { :full_name => 'EU (Ireland)' },
     'eu-central-1' => { :full_name => 'EU (Frankfurt)' },
-    'ap-southeast-1' => { :full_name => 'Asia Pacific (Singapore)', :price_mapping => 'ap-southeast-1', :emr_mapping => 'apac-sin' },
-    'ap-southeast-2' => { :full_name => 'Asia Pacific (Sydney)', :price_mapping => 'ap-southeast-2', :emr_mapping => 'apac-syd' },
-    'ap-northeast-1' => { :full_name => 'Asia Pacific (Tokyo)', :price_mapping => 'ap-northeast-1', :emr_mapping => 'apac-tokyo' },
-    'sa-east-1' => { :full_name => 'South America (Sao Paulo)', :price_mapping => 'sa-east-1', :emr_mapping => 'sa-east-1' }
+    'ap-southeast-1' => { :full_name => 'Asia Pacific (Singapore)' },
+    'ap-southeast-2' => { :full_name => 'Asia Pacific (Sydney)' },
+    'ap-northeast-1' => { :full_name => 'Asia Pacific (Tokyo)' },
+    'sa-east-1' => { :full_name => 'South America (Sao Paulo)' }
   }
 
   def self.find name
@@ -25,7 +25,7 @@ class AWSCosts::Region
   end
 
   def emr
-    AWSCosts::EMR.fetch(self.emr_mapping)
+    AWSCosts::EMR.fetch(self.name)
   end
 
   def s3

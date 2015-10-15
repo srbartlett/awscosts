@@ -13,28 +13,30 @@ http_interactions:
       message: Moved Permanently
     headers:
       date:
-      - Wed, 08 Jul 2015 06:40:17 GMT
+      - Thu, 15 Oct 2015 21:25:16 GMT
       server:
       - Server
       x-frame-options:
       - SAMEORIGIN
       x-amz-id-1:
-      - 1TWRTQ8KS9F97X6E5ESJ
+      - 00VMZDYF9XYDZMEW8JS9
       location:
       - "/elasticmapreduce/pricing/pricing-emr.json/"
       cache-control:
       - no-store, no-cache, must-revalidate
       content-length:
       - '0'
+      access-control-allow-origin:
+      - http://aws.amazon.com
       vary:
-      - User-Agent
+      - Accept-Encoding,User-Agent
       content-type:
       - application/json
     body:
       encoding: UTF-8
       string: ''
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 06:40:42 GMT
+  recorded_at: Thu, 15 Oct 2015 21:25:16 GMT
 - request:
     method: get
     uri: http://aws.amazon.com/elasticmapreduce/pricing/pricing-emr.json/
@@ -48,28 +50,32 @@ http_interactions:
       message: Moved Permanently
     headers:
       date:
-      - Wed, 08 Jul 2015 06:40:18 GMT
+      - Thu, 15 Oct 2015 21:25:17 GMT
       server:
       - Server
       x-frame-options:
       - SAMEORIGIN
       x-amz-id-1:
-      - 0AHZQ9PJGXZ9PF2VPFDC
+      - 1Z554D701710MXZ9D4R5
+      last-modified:
+      - Thu, 08 Oct 2015 20:05:00 GMT
       location:
       - https://a0.awsstatic.com/pricing/1/deprecated/emr/pricing-emr.json
       content-type:
       - text/html;charset=UTF-8
       content-length:
       - '0'
+      access-control-allow-origin:
+      - http://aws.amazon.com
       set-cookie:
       - aws_lang=en; Domain=.amazon.com; Path=/
       vary:
-      - User-Agent
+      - Accept-Encoding,User-Agent
     body:
       encoding: UTF-8
       string: ''
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 06:40:43 GMT
+  recorded_at: Thu, 15 Oct 2015 21:25:17 GMT
 - request:
     method: get
     uri: https://a0.awsstatic.com/pricing/1/deprecated/emr/pricing-emr.json
@@ -87,27 +93,29 @@ http_interactions:
       content-type:
       - application/json
       content-length:
-      - '128732'
+      - '128751'
       connection:
       - close
       date:
-      - Wed, 08 Jul 2015 05:30:59 GMT
+      - Thu, 15 Oct 2015 21:11:17 GMT
       cache-control:
       - max-age=3600
       last-modified:
-      - Fri, 26 Jun 2015 06:11:27 GMT
+      - Wed, 14 Oct 2015 21:33:52 GMT
       etag:
-      - '"dfe183ca9a820fbd34aea98deaf814c7"'
+      - '"3455961bffe1492b8a3d97169fc4e0f5"'
       accept-ranges:
       - bytes
       server:
       - AmazonS3
+      age:
+      - '843'
       x-cache:
-      - RefreshHit from cloudfront
+      - Hit from cloudfront
       via:
-      - 1.1 9d4e31d14f9ca2b4887f0d5ace789fde.cloudfront.net (CloudFront)
+      - 1.1 be7e14304ffc3b5972e7e225c4a1caf4.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - oRqS01_gBmwgeSWKKbIyD-USxD0VHgu3vGGe3I1nalWGqiogEKIH2A==
+      - sjLPy8PB_AFrRiQ2EOwAPGPgmSZXT35YwXoDyLg6HxR-NFLM6lPnzQ==
     body:
       encoding: UTF-8
       string: |
@@ -120,7 +128,7 @@ http_interactions:
             ],
             "regions": [
               {
-                "region": "us-east",
+                "region": "us-east-1",
                 "footnotes": {
                 },
                 "instanceTypes": [
@@ -133,7 +141,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.280"
+                              "USD": "0.266"
                             }
                           },
                           {
@@ -150,7 +158,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.560"
+                              "USD": "0.532"
                             }
                           },
                           {
@@ -749,7 +757,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.280"
+                              "USD": "0.266"
                             }
                           },
                           {
@@ -766,7 +774,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.560"
+                              "USD": "0.532"
                             }
                           },
                           {
@@ -1332,7 +1340,7 @@ http_interactions:
                 ]
               },
               {
-                "region": "us-west",
+                "region": "us-west-1",
                 "instanceTypes": [
                   {
                     "type": "General Purpose  - Current Generation",
@@ -1785,7 +1793,7 @@ http_interactions:
                 ]
               },
               {
-                "region": "eu-ireland",
+                "region": "eu-west-1",
                 "instanceTypes": [
                   {
                     "type": "General Purpose  - Current Generation",
@@ -1796,7 +1804,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.308"
+                              "USD": "0.293"
                             }
                           },
                           {
@@ -1813,7 +1821,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.616"
+                              "USD": "0.585"
                             }
                           },
                           {
@@ -2412,7 +2420,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.332"
+                              "USD": "0.315"
                             }
                           },
                           {
@@ -2429,7 +2437,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.665"
+                              "USD": "0.632"
                             }
                           },
                           {
@@ -2732,7 +2740,7 @@ http_interactions:
                 ]
               },
               {
-                "region": "apac-sin",
+                "region": "ap-southeast-1",
                 "instanceTypes": [
                   {
                     "type": "General Purpose  - Current Generation",
@@ -3275,7 +3283,7 @@ http_interactions:
                 ]
               },
               {
-                "region": "apac-tokyo",
+                "region": "ap-northeast-1",
                 "instanceTypes": [
                   {
                     "type": "General Purpose  - Current Generation",
@@ -3286,7 +3294,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.405"
+                              "USD": "0.385"
                             }
                           },
                           {
@@ -3303,7 +3311,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.810"
+                              "USD": "0.770"
                             }
                           },
                           {
@@ -3847,7 +3855,7 @@ http_interactions:
                 ]
               },
               {
-                "region": "apac-syd",
+                "region": "ap-southeast-2",
                 "instanceTypes": [
                   {
                     "type": "General Purpose  - Current Generation",
@@ -3858,7 +3866,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.392"
+                              "USD": "0.372"
                             }
                           },
                           {
@@ -3875,7 +3883,7 @@ http_interactions:
                           {
                             "name": "ec2",
                             "prices": {
-                              "USD": "0.784"
+                              "USD": "0.745"
                             }
                           },
                           {
@@ -4982,5 +4990,5 @@ http_interactions:
           }
         }
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 06:40:44 GMT
+  recorded_at: Thu, 15 Oct 2015 21:25:19 GMT
 recorded_with: VCR 2.9.3
