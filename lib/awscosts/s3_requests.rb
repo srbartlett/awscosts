@@ -15,8 +15,10 @@ class AWSCosts::S3Requests
       result = {}
       data['config']['regions'].each do |r|
         tiers = {}
-        r['tiers'].each do |tier|
-          tiers[tier['name']] = { rate: tier['rate'], price: tier['prices']['USD'].to_f}
+        r['types'].each do |tier|
+          tier['tiers'].each do |t|
+            tiers[t['name']] = { rate: t['rate'], price: t['prices']['USD'].to_f}
+          end
         end
         result[r['region']] = tiers
       end
@@ -24,7 +26,4 @@ class AWSCosts::S3Requests
     end
     self.new(transformed[region])
   end
-
 end
-
-

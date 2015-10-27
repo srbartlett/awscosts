@@ -74,7 +74,7 @@ Pricing is also available for data transfer
 
 And request pricing
 
-    region.s3.request.price
+    region.s3.requests.price
 
 ### EBS
 
