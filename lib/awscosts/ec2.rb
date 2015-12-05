@@ -41,7 +41,7 @@ class AWSCosts::EC2
   end
 
   def elb
-    AWSCosts::ELB.fetch(REGION_MAPPING[self.region.name])
+    AWSCosts::ELB.fetch(self.region.name)
   end
 
   def ebs
