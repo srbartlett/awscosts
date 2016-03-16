@@ -6,7 +6,13 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ''
-    headers: {}
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
   response:
     status:
       code: 200
@@ -14,37 +20,37 @@ http_interactions:
     headers:
       content-type:
       - application/javascript
-      content-length:
-      - '2720'
+      transfer-encoding:
+      - chunked
       connection:
       - close
       date:
-      - Sun, 05 Jul 2015 22:29:06 GMT
+      - Thu, 10 Mar 2016 18:20:21 GMT
       cache-control:
-      - max-age=3600
+      - max-age=60
       last-modified:
-      - Fri, 26 Jun 2015 06:10:36 GMT
-      etag:
-      - '"37c401aa593529b84fdf05039d1a6361"'
-      accept-ranges:
-      - bytes
+      - Thu, 10 Mar 2016 18:19:00 GMT
       server:
       - AmazonS3
+      content-encoding:
+      - gzip
+      vary:
+      - Accept-Encoding
       x-cache:
       - RefreshHit from cloudfront
       via:
-      - 1.1 9d4e31d14f9ca2b4887f0d5ace789fde.cloudfront.net (CloudFront)
+      - 1.1 a6931b6147dbbb4a06525775b8eaefcf.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - TAhCF44BoR1bcKesUP6zzHEMM_lTookmt3aZo94jZnUHwOtBs6gXnA==
+      - VrztJ9LlWFAS3fq84es5Rr1BfQEjSwwsqQSZjxqjL6cEX6ykf3-OEA==
     body:
       encoding: UTF-8
       string: |-
         /*
          * This file is intended for use only on aws.amazon.com. We do not guarantee its availability or accuracy.
          *
-         * Copyright 2014 Amazon.com, Inc. or its affiliates. All rights reserved.
+         * Copyright 2016 Amazon.com, Inc. or its affiliates. All rights reserved.
          */
-        callback({vers:0.01,config:{currencies:["USD"],rate:"perGB",regions:[{region:"us-east",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"us-west-2",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"us-west",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"eu-ireland",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"apac-sin",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"apac-tokyo",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"apac-syd",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"sa-east-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"us-gov-west-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.01"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.01"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]}]}});
+        callback({vers:0.01,config:{currencies:["USD"],rate:"perGB",regions:[{region:"us-east-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"us-west-2",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"us-west-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"eu-west-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"eu-central-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"ap-southeast-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"ap-northeast-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"ap-southeast-2",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"ap-northeast-2",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"sa-east-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.005"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.005"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]},{region:"us-gov-west-1",types:[{values:[{prices:{USD:"0.00"},rate:"oneEIP"},{prices:{USD:"0.01"},rate:"perAdditionalEIPPerHour"},{prices:{USD:"0.01"},rate:"perNonAttachedPerHour"},{prices:{USD:"0.00"},rate:"perRemapFirst100"},{prices:{USD:"0.10"},rate:"perRemapOver100"}]}]}]}});
     http_version: '1.1'
-  recorded_at: Wed, 08 Jul 2015 06:40:29 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Wed, 16 Mar 2016 14:05:30 GMT
+recorded_with: VCR 3.0.1
