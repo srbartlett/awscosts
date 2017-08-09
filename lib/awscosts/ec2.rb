@@ -20,7 +20,7 @@ class AWSCosts::EC2
     'eu-central-1' => "eu-central-1",
     'ap-southeast-1' => "apac-sin",
     'ap-southeast-2' =>"apac-syd",
-    'ap-northeast-1' =>"apac-tokyo",
+    'ap-northeast-1' =>"ap-northeast-1",
     'sa-east-1' => "sa-east-1"
   }
 
